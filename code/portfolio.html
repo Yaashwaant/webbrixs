@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Portfolio - Webbrixs Digital Agency</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary": "#7dd3fc",
+                    "on-primary": "#00344d",
+                    "primary-container": "#004c6f",
+                    "on-primary-container": "#c4e7ff",
+                    "secondary": "#99cbed",
+                    "on-secondary": "#00344f",
+                    "secondary-container": "#174b68",
+                    "on-secondary-container": "#cfe5ff",
+                    "tertiary": "#bac8e1",
+                    "on-tertiary": "#233146",
+                    "tertiary-container": "#3a485d",
+                    "on-tertiary-container": "#d6e4fd",
+                    "error": "#ffb4ab",
+                    "on-error": "#690005",
+                    "error-container": "#93000a",
+                    "on-error-container": "#ffdad6",
+                    "background": "#001e2c",
+                    "on-background": "#c4e7ff",
+                    "surface": "#001e2c",
+                    "on-surface": "#c4e7ff",
+                    "surface-variant": "#40484c",
+                    "on-surface-variant": "#c0c7cd",
+                    "outline": "#899298",
+                    "outline-variant": "#40484c",
+                    "surface-container-highest": "#1c3340",
+                    "surface-container-high": "#122834",
+                    "surface-container": "#071e29",
+                    "surface-container-low": "#011621",
+                    "surface-container-lowest": "#001018",
+                    "text-primary": "#FFFFFF",
+                    "text-secondary": "#94A3B8"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.75rem",
+                    "lg": "1rem",
+                    "xl": "1.5rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "container-max": "1280px",
+                    "gutter": "32px",
+                    "margin-desktop": "80px",
+                    "stack-sm": "8px",
+                    "section-gap": "120px",
+                    "margin-mobile": "24px",
+                    "stack-md": "16px",
+                    "stack-lg": "32px"
+            },
+            "fontFamily": {
+                    "display-xl": ["Inter"],
+                    "headline-md": ["Inter"],
+                    "display-xl-mobile": ["Inter"],
+                    "headline-lg-mobile": ["Inter"],
+                    "label-md": ["Inter"],
+                    "headline-lg": ["Inter"],
+                    "body-md": ["Inter"],
+                    "body-lg": ["Inter"]
+            },
+            "fontSize": {
+                    "display-xl": ["72px", { "lineHeight": "80px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                    "headline-md": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+                    "display-xl-mobile": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                    "headline-lg-mobile": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+                    "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                    "headline-lg": ["48px", { "lineHeight": "56px", "fontWeight": "600" }],
+                    "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                    "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        .glass-panel {
+            background: rgba(28, 51, 64, 0.4);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .glow-primary {
+            box-shadow: 0 0 20px 5px rgba(125, 211, 252, 0.2);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #7dd3fc 0%, #bac8e1 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<header class="glass-panel fixed top-0 w-full z-50">
+<div class="flex justify-between items-center px-margin-desktop py-4 w-full z-50 max-w-container-max mx-auto md:px-margin-desktop px-margin-mobile">
+<a class="font-display-xl text-headline-md font-bold tracking-tighter text-on-surface hover:text-primary transition-all duration-300" href="/">
+                Webbrixs
+            </a>
+<nav class="hidden md:flex gap-stack-lg items-center">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="/services">Services</a>
+<a class="font-label-md text-label-md text-primary font-bold border-b-2 border-primary pb-1" href="/portfolio">Portfolio</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="/about">About</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="/process">Process</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="/testimonials">Testimonials</a>
+</nav>
+<a class="hidden md:flex items-center justify-center font-label-md text-label-md px-6 py-3 rounded-xl bg-primary text-on-primary hover:bg-secondary hover:shadow-[0_0_15px_rgba(125,211,252,0.4)] transition-all duration-300" href="/contact">
+                Start Your Project
+            </a>
+<!-- Mobile Menu Button -->
+<button class="md:hidden text-on-surface hover:text-primary transition-colors">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">menu</span>
+</button>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-grow pt-32 pb-section-gap">
+<!-- Hero Section -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center mb-section-gap">
+<h1 class="font-display-xl-mobile md:font-display-xl text-display-xl-mobile md:text-display-xl text-on-surface mb-stack-md">
+                Explore Our <span class="text-gradient">Recent Projects</span>
+</h1>
+<p class="font-body-lg text-body-lg text-text-secondary max-w-2xl mx-auto">
+                Browse through our portfolio showcasing diverse, innovative web design projects and client successes. We build robust and scalable software solutions built for performance and growth.
+            </p>
+</section>
+<!-- Project Bento Grid -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-stack-lg auto-rows-[300px]">
+<!-- Project 1 - Spans 8 cols -->
+<a class="group md:col-span-8 row-span-2 glass-panel rounded-[12px] overflow-hidden relative block hover:border-primary/50 transition-all duration-500" href="#">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-highest via-surface-container-highest/40 to-transparent z-10 opacity-80 group-hover:opacity-60 transition-opacity duration-300"></div>
+<img class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700" data-alt="A sleek, modern web design mockup for a tech company displayed on a high-fidelity laptop screen. The interface features a dark mode aesthetic with vibrant purple and blue gradients, clean typography, and spacious layout. The laptop sits on a minimalist dark desk with soft studio lighting reflecting off the screen, creating a premium and professional atmosphere." src="https://lh3.googleusercontent.com/aida/AP1WRLsOqXiR2ZjMambE9W7h2VEN_lKITlEkYtsCWqSZwiJbjqjxQWKgPXwi9CJs11UMiTnJ7k-_0ooOBFpLWyt3kREtLvNphrlUB86T-_IRGDKZPxL6tmb1usNkvKpeqPl1NHCq7qYIrIC4PXmsH_Kt5k6XwOXhmzNe6sg6fI4vke_V2H-0SZS79pPE6NIFSxxVfwxNuFBg3tdUWv6Qs8zgkbocbJ2tJj9LMIKaDl8c6GAEtJ7dq0OJOgKCf2Mn"/>
+<div class="absolute bottom-0 left-0 p-stack-lg z-20">
+<span class="inline-block px-3 py-1 bg-primary-container/30 border border-primary/20 text-primary text-label-md rounded-full mb-stack-sm backdrop-blur-md">Web Design</span>
+<h3 class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors">Trenzobd.com</h3>
+<p class="font-body-md text-body-md text-text-secondary mt-2">A modern wallet &amp; leather goods platform</p>
+</div>
+</a>
+<!-- Project 2 - Spans 4 cols -->
+<a class="group md:col-span-4 row-span-1 glass-panel rounded-[12px] overflow-hidden relative block hover:border-primary/50 transition-all duration-500" href="#">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-highest via-surface-container-highest/20 to-transparent z-10 opacity-80 group-hover:opacity-60 transition-opacity duration-300"></div>
+<img class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700" data-alt="A clean, minimalist e-commerce interface mockup displayed on a smartphone screen. The UI shows product cards with elegant spacing, soft gray backgrounds, and crisp product photography. The phone is held by a hand against a blurred, moody dark background, emphasizing the high-quality digital experience and responsive design." src="https://lh3.googleusercontent.com/aida/AP1WRLuOOzm85-BVh-xf9iDwKmWghgrpNqdbQy5kf9PE4a3telfQiuo5-z2Za48XmuAA1fNE5i-oxF_qGr3ctLVmX5oz4zr-KqmUT_fPiZIWYjcd4_d-n-X9wWUm4yB_oe3-bJ-qGOr_tHPy3eJJirDocDh3f2hyV3GP_J8BRA7n9apGxAPixfSdqciEPdSbnPuEbP-grxrTprkqUJE4nxf1SeQszWnr0is5SWyesGmxOYUgEyQ95I5Pe6QTCzvt"/>
+<div class="absolute bottom-0 left-0 p-stack-md z-20">
+<h3 class="font-headline-md text-headline-lg-mobile text-on-surface group-hover:text-primary transition-colors">Hossain Furniture</h3>
+</div>
+</a>
+<!-- Project 3 - Spans 4 cols -->
+<a class="group md:col-span-4 row-span-1 glass-panel rounded-[12px] overflow-hidden relative block hover:border-primary/50 transition-all duration-500" href="#">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-highest via-surface-container-highest/20 to-transparent z-10 opacity-80 group-hover:opacity-60 transition-opacity duration-300"></div>
+<img class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700" data-alt="A sophisticated corporate dashboard UI mockup on a curved ultra-wide monitor. The screen displays complex data visualizations, charts, and metrics in a dark theme with electric blue and neon purple accents. The environment is dark and cinematic, suggesting a high-tech command center for business intelligence." src="https://lh3.googleusercontent.com/aida/AP1WRLthFO5I5Qfp64QeBH0el9FokOYg4iISDiqsPughvpRK3Z4u1iF8nOSDEc-ZZd60Ir0UxEA_wiIcB14Rcf0B6b7BD7x3J2gP2ZVcBT5DTGIhSI83Rrp7J2aZ383SACs0woIaPlARx2bz1gDweCyUkCJjoLU1bFt9QSgONohDqmGOddjwhCXJHstWh4rHTfJhn7rDjAKcUTsmztlexq8-n94TNs8-PvxgL2idjGkqWZ2j0HCm89ZLSshoRtM"/>
+<div class="absolute bottom-0 left-0 p-stack-md z-20">
+<h3 class="font-headline-md text-headline-lg-mobile text-on-surface group-hover:text-primary transition-colors">Cutout Expert</h3>
+</div>
+</a>
+<!-- Project 4 - Spans 6 cols -->
+<a class="group md:col-span-6 row-span-1 glass-panel rounded-[12px] overflow-hidden relative block hover:border-primary/50 transition-all duration-500" href="#">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-highest via-surface-container-highest/20 to-transparent z-10 opacity-80 group-hover:opacity-60 transition-opacity duration-300"></div>
+<img class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700" data-alt="An immersive travel booking website interface displayed on a tablet. The screen features stunning landscape photography, large bold typography, and intuitive search inputs. The tablet rests on a dark slate surface surrounded by soft, moody lighting that highlights the vibrant destination images on the screen." src="https://lh3.googleusercontent.com/aida/AP1WRLuDawHrajD15nbsKEdrvCOmElCTfRaV1nXPADTqM5SwP1izPizHwj_3VutHoC48IfprzovLDQ9n1SBFbOzypRp9CWEUniZmBTD7ISY1yTPzn_wFDanjBsU4H47Eip-lEjRx5slFn-DlM_tSZWe11spcUc64bNgcydAX_iLrF1RE52cniLiYmbjv2ZkDzrKKyMg-D9z0mOIAG6EYf3BQ5vX2GDp8uY8W7VQAmB5oi_ilrvRZOkvWhQ1L_oQ"/>
+<div class="absolute bottom-0 left-0 p-stack-md z-20">
+<span class="inline-block px-3 py-1 bg-primary-container/30 border border-primary/20 text-primary text-label-md rounded-full mb-stack-sm backdrop-blur-md">SaaS Platform</span>
+<h3 class="font-headline-md text-headline-lg-mobile text-on-surface group-hover:text-primary transition-colors">Travelora</h3>
+</div>
+</a>
+<!-- Project 5 - Spans 6 cols -->
+<a class="group md:col-span-6 row-span-1 glass-panel rounded-[12px] overflow-hidden relative block hover:border-primary/50 transition-all duration-500" href="#">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-highest via-surface-container-highest/20 to-transparent z-10 opacity-80 group-hover:opacity-60 transition-opacity duration-300"></div>
+<img class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700" data-alt="A modern financial technology mobile app mockup shown across three floating smartphones. The UI features dark cards, bright green and purple data charts, and clean sans-serif typography. The phones are suspended in mid-air against a deep black void with a subtle gradient spotlight illuminating the sleek device edges." src="https://lh3.googleusercontent.com/aida/AP1WRLt__3I62YuDtkgFGhVeSgRtGf6HWEMdEa0wYc6XH4S0-NKYryCuoXVePrrPUCoq9hSaBnTcM6-jKycnb88HPWV3I907-aog4YGLIX8oCDjK1TArxtuQhn4xEnWYkB8UHZM7Sfq261gM3oePIjAJV5YOljj7qAzORT97cTNuMNgjS8GrHDhXXAiQkZSriI1jaXVwrAPpZ5ROI9lLdQi8oF2QxtjDKNV93SOTFWiFJZreBT0Vkk3iMk0A-iqs"/>
+<div class="absolute bottom-0 left-0 p-stack-md z-20">
+<span class="inline-block px-3 py-1 bg-primary-container/30 border border-primary/20 text-primary text-label-md rounded-full mb-stack-sm backdrop-blur-md">Mobile App</span>
+<h3 class="font-headline-md text-headline-lg-mobile text-on-surface group-hover:text-primary transition-colors">Catalyst Advisory</h3>
+</div>
+</a>
+<!-- Project 6 - Spans 3 cols -->
+<a class="group md:col-span-3 row-span-1 glass-panel rounded-[12px] overflow-hidden relative block hover:border-primary/50 transition-all duration-500" href="#">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-highest via-surface-container-highest/20 to-transparent z-10 opacity-80 group-hover:opacity-60 transition-opacity duration-300"></div>
+<img class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700" data-alt="A vibrant digital agency portfolio interface on a laptop screen. The design uses bold asymmetry, large neon typography, and abstract 3D shapes. The lighting is cinematic dark mode, with a subtle purple glow reflecting onto the keyboard." src="https://lh3.googleusercontent.com/aida/AP1WRLv_zYG1Gy6uMQiuzSu_fnohgfNUJqPlucAAp2yPFPOrtoAoe7J2uduE6pS4xQm89-_thgUMkYNnzo-q5-BBJG2XZ6kAFCSOEgTYPrwUXfY3DU-_JyFGPShaRy93AP1eUSd1OV4JifrUnGClh7Z7GzoTRqb1271g7YQSj1MHR2QPOGlc5P_1tXb2W6KBVnLPXkUt8LAbnr1TqZmdnTotn028DzAHQWqs46hd-5gT5jlwWyRPkvWE2-TOvXY7"/>
+<div class="absolute bottom-0 left-0 p-stack-md z-20">
+<h3 class="font-body-lg text-body-lg font-bold text-on-surface group-hover:text-primary transition-colors">Aesthetic Pixel</h3>
+</div>
+</a>
+<!-- Project 7 - Spans 3 cols -->
+<a class="group md:col-span-3 row-span-1 glass-panel rounded-[12px] overflow-hidden relative block hover:border-primary/50 transition-all duration-500" href="#">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-highest via-surface-container-highest/20 to-transparent z-10 opacity-80 group-hover:opacity-60 transition-opacity duration-300"></div>
+<img class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700" data-alt="A minimalist architectural studio website shown on an iPad. The UI features stark white negative space, thin elegant fonts, and high-contrast grayscale photography. The setting is a moody dark room, highlighting the bright interface of the tablet." src="https://lh3.googleusercontent.com/aida/AP1WRLvgQ48LYx1hgziUGtRjqt-l3Haql8R5RIBVbekk2IgXFEgPdMUEdNHMoKDwmBaRNT5BclU0Egwb1TRdac1gOC2btLmTRGxQ9kRzX8siS4-6ki_f0e57SDBZ46tH_GwOWoHlnnd6CjRLoML1H8mQlCY7QqS9mauKOKeQvL-mWBirUoy7TPSJBA-JFwswCbN8wlyXL-lAumxgjaWqj_kXAIqr5mM8YFYV286e1SClGSsrOgguXfl1cZaHO-u5"/>
+<div class="absolute bottom-0 left-0 p-stack-md z-20">
+<h3 class="font-body-lg text-body-lg font-bold text-on-surface group-hover:text-primary transition-colors">Wildbd.com</h3>
+</div>
+</a>
+<!-- Project 8 - Spans 6 cols, 2 rows -->
+<a class="group md:col-span-6 row-span-2 glass-panel rounded-[12px] overflow-hidden relative block hover:border-primary/50 transition-all duration-500" href="#">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-highest via-surface-container-highest/30 to-transparent z-10 opacity-80 group-hover:opacity-60 transition-opacity duration-300"></div>
+<img class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700" data-alt="An expansive multi-vendor e-commerce platform displayed on a large desktop monitor. The interface is complex yet organized, featuring a dark mode theme with glassmorphic sidebars and glowing product highlight cards. The monitor sits in a dimly lit, futuristic workspace with subtle ambient purple backlighting." src="https://lh3.googleusercontent.com/aida/AP1WRLtXgBQ1KRuBpFhZaSgKDOMQEonX77bltzHBE-XYChd-kIMTWrhPbLGEyuqdEjNLeI3lZrx1SNgdQrCLEnefKtQs-MGOT1BbQRu-rRJZkKHt9F2uSQ8OospKaDa_cLgwzAOMg9M3zd3pO88GjqmNbjfH4avqz1F9M4z-FFQNRkgWf0UNRgzlZa6624mep6fmqCbspSwn_joe9OJG85byzhFHQ-uB1vPk-tiX0w467bq0BsPJgbIQtegxqOF-"/>
+<div class="absolute bottom-0 left-0 p-stack-lg z-20">
+<span class="inline-block px-3 py-1 bg-primary-container/30 border border-primary/20 text-primary text-label-md rounded-full mb-stack-sm backdrop-blur-md">E-Commerce</span>
+<h3 class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors">Flexzon Bd</h3>
+<p class="font-body-md text-body-md text-text-secondary mt-2">A complete end-to-end e-commerce solution</p>
+</div>
+</a>
+<!-- Project 9 - Spans 4 cols -->
+<a class="group md:col-span-4 row-span-1 glass-panel rounded-[12px] overflow-hidden relative block hover:border-primary/50 transition-all duration-500" href="#">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-highest via-surface-container-highest/20 to-transparent z-10 opacity-80 group-hover:opacity-60 transition-opacity duration-300"></div>
+<img class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700" data-alt="A sleek healthcare application dashboard mockup on a laptop. The UI features soft pastel data charts, rounded cards, and clean typography against a light mode interface, contrasted by the dark moody environment the laptop sits in." src="https://lh3.googleusercontent.com/aida/AP1WRLtAhbJFtsbNYtw7Xd1hexlECA6Fe51IRQ1Igqa7C8s7rEq31qfaYb2zdtzfW8zMk1PyH4Nn6wZfSM3IPplWGNU9MXPZxf1ZtZIo4807Btf3NBRe8etgXAXbvHhNuaWAwxGrx81kMJX3_hLyJqJ5zFGdTNKYv3ZYmBaocQonYqySM9g_LHKJ7cZtSbrMq0LQrVE6lOfIzLVUIlyBP7XqCawVFfAlxu4Q1FC0Wj5LZU9oFDZSVlgxoszD4lHD"/>
+<div class="absolute bottom-0 left-0 p-stack-md z-20">
+<h3 class="font-headline-md text-headline-lg-mobile text-on-surface group-hover:text-primary transition-colors">HealthTech</h3>
+</div>
+</a>
+<!-- Project 10 - Spans 4 cols -->
+<a class="group md:col-span-4 row-span-1 glass-panel rounded-[12px] overflow-hidden relative block hover:border-primary/50 transition-all duration-500" href="#">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-highest via-surface-container-highest/20 to-transparent z-10 opacity-80 group-hover:opacity-60 transition-opacity duration-300"></div>
+<img class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700" data-alt="A modern real estate platform UI displayed on a smartphone. The app shows high-quality property photos with smooth glassmorphic overlay details and pricing tags. The phone is resting on a dark textured surface, emphasizing the crisp app interface." src="https://lh3.googleusercontent.com/aida/AP1WRLvj0uXhVb4s22AB73RfwzyXFX_HvyBZDCOXooAQcfGg6kd2_CquIMh_mZmUW-ev-z-kawyFLRFPl0fEdaFaBVvpz_PAxK-MW6rim3k0eIcLt5Za6w3cpW2WpOsQ67zjaYc9zVLNUzRI0yw_eZWLVabMMKKrFk3ZxzEoMYoRlpjj_QoIN3-wwGdjv7GrNoccDL6RGf0aj-H5MCnqdYyhhzmEm7a5pfblFFCqCYfCLzJaAZTcK4jZOaoY7TCa"/>
+<div class="absolute bottom-0 left-0 p-stack-md z-20">
+<h3 class="font-headline-md text-headline-lg-mobile text-on-surface group-hover:text-primary transition-colors">EstateFlow</h3>
+</div>
+</a>
+<!-- Remaining images to fill out the bento grid -->
+<!-- Project 11 - 3 cols -->
+<a class="group md:col-span-3 row-span-1 glass-panel rounded-[12px] overflow-hidden relative block hover:border-primary/50 transition-all duration-500" href="#">
+<img class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700" data-alt="A minimalist logo design presentation for a luxury brand. The logo is embossed on a dark, textured card sitting on a sleek black table under a soft spotlight." src="https://lh3.googleusercontent.com/aida/AP1WRLvV-mlZpEh9s-ITQVnePGXpyS7YI5vSTpvQhrr8w51RHlJI0PoVlF9zR_0MuEN0pPEoESTWqHCHmlcUsIL5CyLVb3Mi22p2FJNMPlpgiugJxQ_j2WghqwfoBUF5X2xj3Kpcn1BcCk4WcldGI05XyU1_A0R_Bf4SnEiGv_5mX9lOVuQCsnSmKQfofwUSEdd0c2jSVzIzm49HtjlZO0WdgYCFw0EYd2fNmduQkFfqCaXFupyO0acLYILFktvm"/>
+</a>
+<!-- Project 12 - 3 cols -->
+<a class="group md:col-span-3 row-span-1 glass-panel rounded-[12px] overflow-hidden relative block hover:border-primary/50 transition-all duration-500" href="#">
+<img class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700" data-alt="A sleek dark mode email client interface mockup. Clean lines, subtle gradients, and focused typography on a futuristic display." src="https://lh3.googleusercontent.com/aida/AP1WRLvBOqpDisrVJxpPxyaiHGM-zBLuhVnHZO6FYHd9BI7zYobJNZJIMq0NsCPVZyTtZkquQZ8jkBfPogAUcnnr-099NDiM8ZW75E-ZfYP67eb9CSmRISz7vcnH_yjRRoD_Yp_bBv3v4nz0Q7jIdNDW41H2rqU1G4FQL7eRwtfuGUMymTtMXFd-BaCpwq_4RX1HL-4VJGLPBiYNR4HKF6cOoRvMA2lv0UYI4AE-IRzk03yz0cVVGTn3_IDYaf7L"/>
+</a>
+<!-- Project 13 - 3 cols -->
+<a class="group md:col-span-3 row-span-1 glass-panel rounded-[12px] overflow-hidden relative block hover:border-primary/50 transition-all duration-500" href="#">
+<img class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700" data-alt="A high-fidelity mockup of a smart home dashboard tablet app. Vibrant controls on a deep dark background, showing temperature and lighting stats." src="https://lh3.googleusercontent.com/aida/AP1WRLvzcIeJPYeJp65_vhoHf4M17YTjd-eQXq0hUGkbKrc5d_XDzPUQq6k1CZkTz7uAnv96m5ZEyibXtD8r7LeYEx-Ew1JgFiQC0RM-mbaWehb5HUxqshKiU5fMtr63heT67H0NNRwLwHlOX-15_zJQFfWkMN-jlk5p7Ozzx3V6OVvWfRdlHBwDHRlH6zhbtJ6b-t2ewt5-pv33yCyD-aRCoJ8Jy7O9hzyMRAO0WZh8nj8Y-INsdzkVlmwcszE"/>
+</a>
+<!-- Project 14 - 3 cols -->
+<a class="group md:col-span-3 row-span-1 glass-panel rounded-[12px] overflow-hidden relative block hover:border-primary/50 transition-all duration-500" href="#">
+<img class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700" data-alt="A stylish fashion e-commerce lookbook interface. Large moody photography paired with elegant serif typography in a minimal UI shell." src="https://lh3.googleusercontent.com/aida/AP1WRLsZS11_51PBSgnFMleG_0glYjp0VU1Bjr6mcKboHUKCasiBZKuDIos3agCktC2nBAe6JFLXMKSYorXqUsqWGHP6JwA1nZiLRIqzrjY4SVvqJuRsRWprYBPkxqIy-b02OQ3zOJT0z0gxzqGhGpZeDhcqIjhtLnML5Jn99ZgSUQiPKhpZHxGjBcY3q-Da-yyW1kPE5k6uEeOeYIjdsnqiA-7R9VeCp8D0EGsgYbIKdVzYKjocVD8GeMAaUDkI"/>
+</a>
+<!-- Project 15 - 6 cols -->
+<a class="group md:col-span-6 row-span-1 glass-panel rounded-[12px] overflow-hidden relative block hover:border-primary/50 transition-all duration-500" href="#">
+<img class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700" data-alt="A comprehensive analytics platform dashboard for a logistics company. Detailed dark mode graphs, maps, and metrics with neon green and purple accents." src="https://lh3.googleusercontent.com/aida/AP1WRLuccmWGWh6pHpsgyx0AFjrRR7XAyMVB4u1JLBgLIxgiyTKY5N01nTVuOzi04KmXdP0bGiHivQqUudhFneEMOhkX-07F4ENuGmxgauK7I8zxh3izFQaMXywr53wYcRTmBTlCgvvtTIEcF3dcL9kDZXWhLG5CF55sWBPEh6TLHTqHSBdgEk8yDacqRNp6LvcMSCNGLbYYU_bxPEwezi_fBel33kKsHpVDUtvKfJ1AVI2Q_0Z4YfcQP7bFI04"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-highest to-transparent opacity-50"></div>
+<div class="absolute bottom-0 left-0 p-stack-md z-20"><h3 class="font-headline-md text-headline-lg-mobile text-on-surface">LogiTrack</h3></div>
+</a>
+<!-- Project 16 - 6 cols -->
+<a class="group md:col-span-6 row-span-1 glass-panel rounded-[12px] overflow-hidden relative block hover:border-primary/50 transition-all duration-500" href="#">
+<img class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700" data-alt="An innovative music streaming app interface showing a playing track with vivid, dynamic background blur matching the album art, wrapped in a sleek dark UI." src="https://lh3.googleusercontent.com/aida/AP1WRLusOBUknZjFKo0VsgOdqpdxefTuSUQnZ0nA3XohQwohP8AG6yfDSdZOS6kH3-0wlJEmtn2ORIeL0I0NY17X_GhcgnspSBznLD1LT2K0AOPWMMS4ZdOWatys-o8UfAPbSujYDz-8ONRqzImQ6CWoMvuXzq0vmFRqAKut_5uEAYE6tqthVLHoYBXPfKoAfty5jlV3aocwg936McMcqAKTaWS7K1MfqeRBAHKH0EuZIOFIKWB0jCU-MKuuwJON"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-highest to-transparent opacity-50"></div>
+<div class="absolute bottom-0 left-0 p-stack-md z-20"><h3 class="font-headline-md text-headline-lg-mobile text-on-surface">VibeStream</h3></div>
+</a>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="glass-panel w-full border-t border-white/5">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-stack-lg px-margin-desktop py-section-gap max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="flex flex-col gap-stack-sm">
+<span class="font-display-xl text-headline-md font-bold text-on-surface tracking-tighter">Webbrixs</span>
+<p class="font-body-md text-body-md text-text-secondary mt-stack-sm">
+                    © 2024 Webbrixs Digital Agency. All rights reserved.
+                </p>
+<div class="flex gap-stack-sm mt-stack-md">
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">language</span>
+</a>
+</div>
+</div>
+<div class="flex flex-col gap-stack-sm">
+<span class="font-label-md text-label-md text-on-surface uppercase tracking-widest mb-stack-sm">Services</span>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Web Design</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Software Development</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">E-commerce</a>
+</div>
+<div class="flex flex-col gap-stack-sm">
+<span class="font-label-md text-label-md text-on-surface uppercase tracking-widest mb-stack-sm">Company</span>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Portfolio</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">About Us</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Careers</a>
+</div>
+<div class="flex flex-col gap-stack-sm">
+<span class="font-label-md text-label-md text-on-surface uppercase tracking-widest mb-stack-sm">Legal</span>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Privacy Policy</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+</body></html>

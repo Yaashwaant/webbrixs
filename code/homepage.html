@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Webbrixs - Digital Agency</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #7dd3fc 0%, #0284c7 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bg-accent-gradient {
+            background: linear-gradient(135deg, #7dd3fc 0%, #0284c7 100%);
+        }
+        .glow-hover:hover {
+            box-shadow: 0 0 20px rgba(125, 211, 252, 0.4);
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-secondary-container": "#c4e7ff",
+                        "surface": "#080c10",
+                        "inverse-on-surface": "#252b31",
+                        "on-tertiary-fixed": "#002022",
+                        "surface-container-highest": "#2e363d",
+                        "on-tertiary-container": "#ffffff",
+                        "secondary-container": "#004d64",
+                        "on-primary": "#00354b",
+                        "surface-container-high": "#232b32",
+                        "on-error": "#690005",
+                        "error-container": "#93000a",
+                        "on-primary-fixed-variant": "#004c6a",
+                        "primary-fixed-dim": "#7dd3fc",
+                        "surface-container-low": "#151c23",
+                        "on-tertiary-fixed-variant": "#004f53",
+                        "secondary-fixed-dim": "#8cd3ff",
+                        "inverse-surface": "#dce3ec",
+                        "secondary-fixed": "#c4e7ff",
+                        "on-surface": "#dce3ec",
+                        "surface-tint": "#7dd3fc",
+                        "surface-bright": "#323a41",
+                        "error": "#ffb4ab",
+                        "on-primary-container": "#ffffff",
+                        "tertiary-fixed-dim": "#4cd9e2",
+                        "outline-variant": "#43484e",
+                        "surface-variant": "#2e363d",
+                        "surface-dim": "#080c10",
+                        "on-secondary-fixed-variant": "#004d64",
+                        "on-surface-variant": "#c3c7cf",
+                        "surface-elevated": "#0a1016",
+                        "text-primary": "#FFFFFF",
+                        "outline": "#8d9199",
+                        "primary-container": "#209acf",
+                        "on-secondary": "#003446",
+                        "on-error-container": "#ffdad6",
+                        "surface-container": "#192027",
+                        "on-secondary-fixed": "#001e2a",
+                        "inverse-primary": "#00648a",
+                        "primary-fixed": "#bce9ff",
+                        "surface-container-lowest": "#05080a",
+                        "on-tertiary": "#00373a",
+                        "tertiary": "#4cd9e2",
+                        "secondary": "#8cd3ff",
+                        "primary": "#7dd3fc",
+                        "on-background": "#dce3ec",
+                        "tertiary-container": "#007379",
+                        "background": "#080c10",
+                        "on-primary-fixed": "#001f2e",
+                        "tertiary-fixed": "#6ff6ff",
+                        "text-secondary": "#94A3B8"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.75rem",
+                        "lg": "0.75rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    spacing: {
+                        "container-max": "1280px",
+                        "gutter": "32px",
+                        "margin-desktop": "80px",
+                        "stack-sm": "8px",
+                        "section-gap": "120px",
+                        "margin-mobile": "24px",
+                        "stack-md": "16px",
+                        "stack-lg": "32px"
+                    },
+                    fontFamily: {
+                        "display-xl": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "display-xl-mobile": ["Inter"],
+                        "headline-lg-mobile": ["Inter"],
+                        "label-md": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "body-md": ["Inter"],
+                        "body-lg": ["Inter"]
+                    },
+                    fontSize: {
+                        "display-xl": ["72px", { lineHeight: "80px", letterSpacing: "-0.02em", fontWeight: "700" }],
+                        "headline-md": ["32px", { lineHeight: "40px", fontWeight: "600" }],
+                        "display-xl-mobile": ["40px", { lineHeight: "48px", letterSpacing: "-0.02em", fontWeight: "700" }],
+                        "headline-lg-mobile": ["32px", { lineHeight: "40px", fontWeight: "600" }],
+                        "label-md": ["14px", { lineHeight: "20px", letterSpacing: "0.05em", fontWeight: "600" }],
+                        "headline-lg": ["48px", { lineHeight: "56px", fontWeight: "600" }],
+                        "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }],
+                        "body-lg": ["18px", { lineHeight: "28px", fontWeight: "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-surface text-on-surface antialiased font-body-md text-body-md selection:bg-primary-container selection:text-white">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full bg-surface/40 backdrop-blur-xl border-b border-white/10 shadow-sm flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 z-50 transition-all duration-300">
+<div class="flex items-center gap-4">
+<img alt="Webbrixs Logo" class="h-8 md:h-10 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAU6hRgJEHuakZ7nC6qYeLuR6Czdh5yFzzlb-eI-JeprSQbc_eMuJIV1uYJswmHYGuEvVrbvdSKFLoaicV1w3wGG7LVtLNgEle80iNXqe3GKFs2p4q56oZaADVfvqQEBpjB5NfH4jqiVhQz8kW37_gWYECrNz52UNxHZ9aWa2vrDFs8hN3NiJ5_qfEkNsc61WmjHnMPdxzyfuYm0TQ5stKCJZNSvm2iIAPGmd-Ff8B5ErS_gzQeo4E2ZAQ9gPV43uGmO-LvFbQ7SU0X"/>
+<span class="font-display-xl text-headline-md font-bold tracking-tighter text-on-surface hidden lg:block">Webbrixs</span>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:scale-102 transition-all duration-300" href="#">Services</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:scale-102 transition-all duration-300" href="#">Portfolio</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:scale-102 transition-all duration-300" href="#">About</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:scale-102 transition-all duration-300" href="#">Process</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:scale-102 transition-all duration-300" href="#">Testimonials</a>
+</div>
+<button class="bg-primary text-on-primary font-label-md text-label-md px-6 py-3 rounded-lg hover:bg-primary-fixed hover:scale-105 glow-hover transition-all duration-300 hidden md:block">
+            Start Your Project
+        </button>
+<button class="md:hidden text-on-surface">
+<span class="material-symbols-outlined text-[32px]">menu</span>
+</button>
+</nav>
+<main class="w-full">
+<!-- Hero Section -->
+<section class="relative min-h-screen flex flex-col justify-center items-center px-margin-mobile md:px-margin-desktop pt-[120px] pb-section-gap text-center overflow-hidden">
+<div class="absolute inset-0 z-0 opacity-30 pointer-events-none" style="background: radial-gradient(circle at 50% 30%, rgba(125, 211, 252, 0.2) 0%, rgba(8, 12, 16, 0) 70%);"></div>
+<div class="relative z-10 max-w-container-max mx-auto flex flex-col items-center gap-stack-lg">
+<div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary font-label-md text-label-md mb-4 backdrop-blur-md">
+<span class="material-symbols-outlined text-[16px]">rocket_launch</span>
+                    Welcome to Webbrixs
+                </div>
+<h1 class="font-display-xl-mobile text-display-xl-mobile md:font-display-xl md:text-display-xl max-w-4xl text-transparent bg-clip-text text-gradient">
+                    Our mission is to design websites that attract and engage customers.
+                </h1>
+<p class="font-body-lg text-body-lg text-text-secondary max-w-2xl mt-4">
+                    However, we approach things a bit differently around here. We fuse high-end aesthetic minimalism with robust engineering to create future-proof digital experiences.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4 mt-8">
+<button class="bg-primary text-on-primary font-label-md text-label-md px-8 py-4 rounded-lg hover:bg-primary-fixed hover:scale-105 glow-hover transition-all duration-300 flex items-center justify-center gap-2">
+                        Start Your Project
+                        <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<button class="bg-surface/50 backdrop-blur-md border border-white/10 text-on-surface font-label-md text-label-md px-8 py-4 rounded-lg hover:bg-white/5 transition-all duration-300 flex items-center justify-center gap-2">
+                        View Portfolio
+                    </button>
+</div>
+</div>
+</section>
+<!-- Core Services Section -->
+<section class="px-margin-mobile md:px-margin-desktop py-section-gap max-w-container-max mx-auto">
+<div class="flex flex-col items-center text-center mb-16">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg mb-4">Explore Our Core Services</h2>
+<p class="font-body-md text-body-md text-text-secondary max-w-2xl">Discover our comprehensive range of services tailored to enhance your digital presence.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Service 1 -->
+<div class="bg-surface/50 backdrop-blur-md border border-white/10 rounded-xl p-8 hover:border-primary/50 transition-all duration-300 group">
+<div class="text-primary font-display-xl text-headline-md opacity-50 mb-6">01</div>
+<h3 class="font-headline-md text-[24px] font-semibold mb-4 text-on-surface group-hover:text-primary transition-colors">Web Design &amp; Development</h3>
+<p class="font-body-md text-body-md text-text-secondary mb-8 h-24">We design intuitive interfaces and seamless user experiences that enhance usability and keep your audience engaged.</p>
+<ul class="space-y-3 mb-8">
+<li class="flex items-center gap-3 text-on-surface-variant font-body-md text-body-md">
+<span class="material-symbols-outlined text-primary text-[20px]">check_circle</span> Custom UI/UX Design
+                        </li>
+<li class="flex items-center gap-3 text-on-surface-variant font-body-md text-body-md">
+<span class="material-symbols-outlined text-primary text-[20px]">check_circle</span> Responsive Layouts
+                        </li>
+<li class="flex items-center gap-3 text-on-surface-variant font-body-md text-body-md">
+<span class="material-symbols-outlined text-primary text-[20px]">check_circle</span> SEO Optimized
+                        </li>
+</ul>
+<a class="inline-flex items-center gap-2 text-primary font-label-md text-label-md hover:gap-3 transition-all" href="#">Learn More <span class="material-symbols-outlined text-[18px]">arrow_right_alt</span></a>
+</div>
+<!-- Service 2 -->
+<div class="bg-surface/50 backdrop-blur-md border border-white/10 rounded-xl p-8 hover:border-primary/50 transition-all duration-300 group transform md:-translate-y-4">
+<div class="text-primary font-display-xl text-headline-md opacity-50 mb-6">02</div>
+<h3 class="font-headline-md text-[24px] font-semibold mb-4 text-on-surface group-hover:text-primary transition-colors">Software Development</h3>
+<p class="font-body-md text-body-md text-text-secondary mb-8 h-24">Robust and scalable software solutions built for performance and growth. From custom SaaS platforms to enterprise tools.</p>
+<ul class="space-y-3 mb-8">
+<li class="flex items-center gap-3 text-on-surface-variant font-body-md text-body-md">
+<span class="material-symbols-outlined text-primary text-[20px]">check_circle</span> Custom SaaS Solutions
+                        </li>
+<li class="flex items-center gap-3 text-on-surface-variant font-body-md text-body-md">
+<span class="material-symbols-outlined text-primary text-[20px]">check_circle</span> API Development
+                        </li>
+<li class="flex items-center gap-3 text-on-surface-variant font-body-md text-body-md">
+<span class="material-symbols-outlined text-primary text-[20px]">check_circle</span> Cloud Infrastructure
+                        </li>
+</ul>
+<a class="inline-flex items-center gap-2 text-primary font-label-md text-label-md hover:gap-3 transition-all" href="#">Learn More <span class="material-symbols-outlined text-[18px]">arrow_right_alt</span></a>
+</div>
+<!-- Service 3 -->
+<div class="bg-surface/50 backdrop-blur-md border border-white/10 rounded-xl p-8 hover:border-primary/50 transition-all duration-300 group">
+<div class="text-primary font-display-xl text-headline-md opacity-50 mb-6">03</div>
+<h3 class="font-headline-md text-[24px] font-semibold mb-4 text-on-surface group-hover:text-primary transition-colors">End to End E-commerce</h3>
+<p class="font-body-md text-body-md text-text-secondary mb-8 h-24">Complete eCommerce solutions that scale with your business. We build secure payment gateways and inventory systems.</p>
+<ul class="space-y-3 mb-8">
+<li class="flex items-center gap-3 text-on-surface-variant font-body-md text-body-md">
+<span class="material-symbols-outlined text-primary text-[20px]">check_circle</span> Multi-vendor Platforms
+                        </li>
+<li class="flex items-center gap-3 text-on-surface-variant font-body-md text-body-md">
+<span class="material-symbols-outlined text-primary text-[20px]">check_circle</span> Secure Payments
+                        </li>
+<li class="flex items-center gap-3 text-on-surface-variant font-body-md text-body-md">
+<span class="material-symbols-outlined text-primary text-[20px]">check_circle</span> Inventory Systems
+                        </li>
+</ul>
+<a class="inline-flex items-center gap-2 text-primary font-label-md text-label-md hover:gap-3 transition-all" href="#">Learn More <span class="material-symbols-outlined text-[18px]">arrow_right_alt</span></a>
+</div>
+</div>
+</section>
+<!-- Recent Projects Section -->
+<section class="px-margin-mobile md:px-margin-desktop py-section-gap max-w-container-max mx-auto bg-surface-container-lowest/50 backdrop-blur-xl rounded-[0.75rem] border border-white/5 my-12">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6 px-4 md:px-12 pt-12">
+<div class="max-w-2xl">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg mb-4">Explore Our Recent Projects</h2>
+<p class="font-body-md text-body-md text-text-secondary">Browse through our portfolio showcasing diverse, innovative web design projects and client successes.</p>
+</div>
+<button class="bg-surface/50 backdrop-blur-md border border-white/10 text-on-surface font-label-md text-label-md px-6 py-3 rounded-lg hover:bg-white/5 transition-all shrink-0">
+                    View All Projects
+                </button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 px-4 md:px-12 pb-12">
+<!-- Project 1 -->
+<div class="group relative overflow-hidden rounded-xl border border-white/10 bg-surface-elevated aspect-[4/3]">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida/AP1WRLsOqXiR2ZjMambE9W7h2VEN_lKITlEkYtsCWqSZwiJbjqjxQWKgPXwi9CJs11UMiTnJ7k-_0ooOBFpLWyt3kREtLvNphrlUB86T-_IRGDKZPxL6tmb1usNkvKpeqPl1NHCq7qYIrIC4PXmsH_Kt5k6XwOXhmzNe6sg6fI4vke_V2H-0SZS79pPE6NIFSxxVfwxNuFBg3tdUWv6Qs8zgkbocbJ2tJj9LMIKaDl8c6GAEtJ7dq0OJOgKCf2Mn"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-8">
+<h3 class="font-headline-md text-[24px] text-white mb-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">Trenzobd.com</h3>
+<p class="font-body-md text-body-md text-gray-300 opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100">A modern wallet &amp; leather goods platform</p>
+</div>
+</div>
+<!-- Project 2 -->
+<div class="group relative overflow-hidden rounded-xl border border-white/10 bg-surface-elevated aspect-[4/3] md:mt-16">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida/AP1WRLuDawHrajD15nbsKEdrvCOmElCTfRaV1nXPADTqM5SwP1izPizHwj_3VutHoC48IfprzovLDQ9n1SBFbOzypRp9CWEUniZmBTD7ISY1yTPzn_wFDanjBsU4H47Eip-lEjRx5slFn-DlM_tSZWe11spcUc64bNgcydAX_iLrF1RE52cniLiYmbjv2ZkDzrKKyMg-D9z0mOIAG6EYf3BQ5vX2GDp8uY8W7VQAmB5oi_ilrvRZOkvWhQ1L_oQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-8">
+<h3 class="font-headline-md text-[24px] text-white mb-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">Hossain Furniture</h3>
+<p class="font-body-md text-body-md text-gray-300 opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100">A modern furniture platform website</p>
+</div>
+</div>
+<!-- Project 3 -->
+<div class="group relative overflow-hidden rounded-xl border border-white/10 bg-surface-elevated aspect-[4/3]">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida/AP1WRLuccmWGWh6pHpsgyx0AFjrRR7XAyMVB4u1JLBgLIxgiyTKY5N01nTVuOzi04KmXdP0bGiHivQqUudhFneEMOhkX-07F4ENuGmxgauK7I8zxh3izFQaMXywr53wYcRTmBTlCgvvtTIEcF3dcL9kDZXWhLG5CF55sWBPEh6TLHTqHSBdgEk8yDacqRNp6LvcMSCNGLbYYU_bxPEwezi_fBel33kKsHpVDUtvKfJ1AVI2Q_0Z4YfcQP7bFI04"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-8">
+<h3 class="font-headline-md text-[24px] text-white mb-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">Travelora</h3>
+<p class="font-body-md text-body-md text-gray-300 opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100">A modern travel agency website</p>
+</div>
+</div>
+<!-- Project 4 -->
+<div class="group relative overflow-hidden rounded-xl border border-white/10 bg-surface-elevated aspect-[4/3] md:mt-16">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida/AP1WRLt__3I62YuDtkgFGhVeSgRtGf6HWEMdEa0wYc6XH4S0-NKYryCuoXVePrrPUCoq9hSaBnTcM6-jKycnb88HPWV3I907-aog4YGLIX8oCDjK1TArxtuQhn4xEnWYkB8UHZM7Sfq261gM3oePIjAJV5YOljj7qAzORT97cTNuMNgjS8GrHDhXXAiQkZSriI1jaXVwrAPpZ5ROI9lLdQi8oF2QxtjDKNV93SOTFWiFJZreBT0Vkk3iMk0A-iqs"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-8">
+<h3 class="font-headline-md text-[24px] text-white mb-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">Catalyst Advisory</h3>
+<p class="font-body-md text-body-md text-gray-300 opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100">Corporate consulting firm website</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="px-margin-mobile md:px-margin-desktop py-section-gap max-w-container-max mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+<div>
+<h2 class="font-display-xl-mobile text-display-xl-mobile md:font-display-xl md:text-display-xl mb-6">Let's start the dialogue now!</h2>
+<p class="font-body-lg text-body-lg text-text-secondary mb-12">Contact us today to start crafting your exceptional and customized website solution. Expect a response from us within 24 hours.</p>
+<div class="space-y-6">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">verified_user</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-on-surface">NDA Available</h4>
+<p class="font-body-md text-body-md text-text-secondary">We're happy to sign an NDA upon request.</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">support_agent</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-on-surface">Dedicated Team</h4>
+<p class="font-body-md text-body-md text-text-secondary">Get access to a team of dedicated product specialists.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface/50 backdrop-blur-md border border-white/10 rounded-xl p-8 md:p-12 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary/20 blur-[100px] pointer-events-none"></div>
+<form class="relative z-10 flex flex-col gap-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-on-surface-variant">Full Name *</label>
+<input class="bg-surface border border-outline-variant rounded-lg px-4 py-3 text-on-surface focus:border-primary focus:ring-1 focus:ring-primary transition-all outline-none" placeholder="John Doe" type="text"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-on-surface-variant">Email *</label>
+<input class="bg-surface border border-outline-variant rounded-lg px-4 py-3 text-on-surface focus:border-primary focus:ring-1 focus:ring-primary transition-all outline-none" placeholder="john@company.com" type="email"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-on-surface-variant">Company *</label>
+<input class="bg-surface border border-outline-variant rounded-lg px-4 py-3 text-on-surface focus:border-primary focus:ring-1 focus:ring-primary transition-all outline-none" placeholder="Company Name" type="text"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-on-surface-variant">Select a service *</label>
+<select class="bg-surface border border-outline-variant rounded-lg px-4 py-3 text-on-surface focus:border-primary focus:ring-1 focus:ring-primary transition-all outline-none appearance-none">
+<option>Web Design &amp; Development</option>
+<option>Software Development</option>
+<option>End to end E-commerce Solution</option>
+</select>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-on-surface-variant">Message *</label>
+<textarea class="bg-surface border border-outline-variant rounded-lg px-4 py-3 text-on-surface focus:border-primary focus:ring-1 focus:ring-primary transition-all outline-none resize-none" placeholder="Tell us about your project..." rows="4"></textarea>
+</div>
+<button class="bg-primary text-on-primary font-label-md text-label-md px-8 py-4 rounded-lg hover:bg-primary-fixed hover:scale-102 glow-hover transition-all duration-300 w-full mt-4" type="submit">
+                            Send my query
+                        </button>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest border-t border-white/5 w-full">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-stack-lg px-margin-mobile md:px-margin-desktop py-section-gap max-w-container-max mx-auto">
+<div class="flex flex-col gap-4 col-span-1 md:col-span-1">
+<span class="font-display-xl text-headline-md font-bold text-on-surface">Webbrixs</span>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">Experienced team delivering exceptional digital solutions tailored to your brand.</p>
+<div class="flex gap-4 mt-4">
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">share</span></a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">language</span></a>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-label-md text-label-md text-on-surface mb-2">Our Services</h4>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Web Design</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Software Development</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">E-commerce</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Portfolio</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-label-md text-label-md text-on-surface mb-2">Company</h4>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">About Us</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Careers</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Terms of Service</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-label-md text-label-md text-on-surface mb-2">Get In Touch</h4>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors flex items-center gap-2" href="mailto:hello@webbrixs.com"><span class="material-symbols-outlined text-[18px]">mail</span> hello@webbrixs.com</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors flex items-center gap-2" href="tel:+8801977201923"><span class="material-symbols-outlined text-[18px]">phone</span> +8801977-201923</a>
+</div>
+</div>
+<div class="border-t border-white/5 py-6 text-center">
+<p class="font-body-md text-body-md text-on-surface-variant">© 2024 Webbrixs Digital Agency. All rights reserved.</p>
+</div>
+</footer>
+</body></html>

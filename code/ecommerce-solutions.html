@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>E-commerce Solutions - Webbrixs</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface": "#0f1524",
+                    "on-secondary-fixed": "#0d1f2b",
+                    "on-error": "#1a0000",
+                    "inverse-primary": "#0a4c6e",
+                    "surface-container-low": "#111828",
+                    "on-secondary": "#001f2e",
+                    "on-tertiary-fixed": "#1a002e",
+                    "tertiary-fixed": "#e8d0ff",
+                    "surface-variant": "#1a2438",
+                    "on-primary-container": "#c8eaff",
+                    "on-primary-fixed-variant": "#004d73",
+                    "surface-container": "#141c2e",
+                    "surface-container-lowest": "#0a0e1a",
+                    "surface-bright": "#1a2438",
+                    "error-container": "#3d1414",
+                    "inverse-on-surface": "#0a0e1a",
+                    "primary-container": "#0e4d6e",
+                    "outline-variant": "#2a3a48",
+                    "secondary-fixed-dim": "#88b4cc",
+                    "primary-fixed": "#c8eaff",
+                    "error": "#ff6b6b",
+                    "tertiary-fixed-dim": "#c8a0f0",
+                    "primary-fixed-dim": "#7dd3fc",
+                    "on-primary": "#001f2e",
+                    "tertiary": "#c8a0f0",
+                    "outline": "#4a6070",
+                    "on-tertiary-container": "#e8d0ff",
+                    "on-secondary-fixed-variant": "#2a4a5e",
+                    "tertiary-container": "#3d2060",
+                    "on-surface-variant": "#a0b4c4",
+                    "on-tertiary": "#1a002e",
+                    "surface-dim": "#0f1524",
+                    "secondary-fixed": "#c0d8e8",
+                    "on-surface": "#e0e8f0",
+                    "on-secondary-container": "#c0d8e8",
+                    "surface-container-high": "#1a2438",
+                    "secondary": "#88b4cc",
+                    "secondary-container": "#1a3a4e",
+                    "primary": "#7dd3fc",
+                    "background": "#0a0e1a",
+                    "on-primary-fixed": "#001f2e",
+                    "on-error-container": "#ffb3b3",
+                    "on-tertiary-fixed-variant": "#4d2a73",
+                    "on-background": "#e0e8f0",
+                    "inverse-surface": "#e0e8f0",
+                    "surface-tint": "#7dd3fc",
+                    "surface-container-highest": "#202c42"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.5rem",
+                    "lg": "1rem",
+                    "xl": "1.5rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Inter"],
+                    "display": ["Inter"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; background-color: #0a0e1a; color: #e0e8f0; }
+        .glass-panel {
+            background: rgba(15, 21, 36, 0.6);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(125, 211, 252, 0.1);
+        }
+        .glass-panel-elevated {
+            background: rgba(15, 21, 36, 0.75);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+            border: 1px solid rgba(125, 211, 252, 0.15);
+        }
+        .glow-effect:hover {
+            box-shadow: 0 0 30px rgba(125, 211, 252, 0.05);
+        }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav class="bg-surface/40 backdrop-blur-xl fixed top-0 w-full border-b border-white/10 shadow-sm z-50 flex justify-between items-center px-6 md:px-12 py-4 w-full">
+<div class="font-display font-bold tracking-tighter text-on-surface text-2xl">
+            Webbrixs
+        </div>
+<div class="hidden md:flex space-x-8 items-center">
+<a class="font-label text-primary font-bold border-b-2 border-primary pb-1 hover:scale-102 transition-all duration-300" href="#">Services</a>
+<a class="font-label text-on-surface-variant hover:text-on-surface hover:scale-102 transition-all duration-300" href="#">Portfolio</a>
+<a class="font-label text-on-surface-variant hover:text-on-surface hover:scale-102 transition-all duration-300" href="#">About</a>
+<a class="font-label text-on-surface-variant hover:text-on-surface hover:scale-102 transition-all duration-300" href="#">Process</a>
+<a class="font-label text-on-surface-variant hover:text-on-surface hover:scale-102 transition-all duration-300" href="#">Testimonials</a>
+</div>
+<div>
+<button class="bg-primary/20 border border-primary/30 text-primary px-6 py-2 rounded-full font-label font-semibold hover:bg-primary/30 hover:shadow-[0_0_30px_rgba(125,211,252,0.15)] transition-all duration-300">
+                Start Your Project
+            </button>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="flex-grow pt-32 pb-24 px-6 md:px-12 max-w-7xl mx-auto w-full flex flex-col gap-16">
+<!-- Hero Section -->
+<section class="text-center max-w-4xl mx-auto space-y-6">
+<h1 class="text-5xl md:text-7xl font-display font-bold tracking-tight text-on-surface leading-tight">
+                Flawless E-commerce <br/> <span class="text-primary">Ecosystems</span>
+</h1>
+<p class="text-lg md:text-xl text-on-surface-variant font-body">
+                We engineer scalable, high-conversion multi-vendor platforms and digital storefronts with the 'Frozen Light' precision of Webbrixs design.
+            </p>
+</section>
+<!-- Bento Grid: Features -->
+<section class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Large Card -->
+<div class="md:col-span-2 glass-panel-elevated rounded-xl p-8 flex flex-col justify-between glow-effect transition-all duration-300 group">
+<div class="space-y-4">
+<span class="material-symbols-outlined text-4xl text-primary" data-weight="fill" style="font-variation-settings: 'FILL' 1;">storefront</span>
+<h3 class="text-2xl font-headline font-semibold text-on-surface">Multi-Vendor Platforms</h3>
+<p class="text-on-surface-variant font-body">Architect robust marketplaces that empower multiple sellers while maintaining a unified, premium brand experience. Advanced commission routing and vendor dashboards.</p>
+</div>
+<div class="mt-8 rounded-lg overflow-hidden h-48 border border-white/5 relative">
+<div class="bg-cover bg-center w-full h-full opacity-60 group-hover:opacity-100 transition-opacity duration-500" data-alt="A sleek, dark-themed digital dashboard UI displaying e-commerce sales graphs and multi-vendor analytics. The interface features a deep navy blue background with vibrant ice-blue line charts and neon cyan data points. Soft glassmorphism panels overlap slightly, creating a sense of depth and modern technological sophistication. The overall aesthetic is 'Frozen Light', premium and analytical." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCQRQmBJbaVW5G0Xx7Dxn-nz-Kv8qEBnPYTJmY2t-oEWOR8FEfgVm1103Vn1nz7-gj5xczLX18qeyM6SWAUjTnwUX-PDqdv9z3Gs_1dCTS5yFO0W0Y31HnITv-h5Zg8frSmv0Uu_wYouBCPQXEPS0QFZAetvlQwgQEoyx5lpVbLiAldgwtsIqm_WhBlzPR4G0k0Td-zruOtuqSarxfNGa1I1Cq23JUXnwDrKncZySiRHZe5RDhfG6TkSBMcAoZRVa0q6FfoxBgsI0A_')"></div>
+</div>
+</div>
+<!-- Small Card 1 -->
+<div class="glass-panel rounded-xl p-8 flex flex-col space-y-4 glow-effect transition-all duration-300">
+<span class="material-symbols-outlined text-3xl text-tertiary" data-weight="fill" style="font-variation-settings: 'FILL' 1;">payments</span>
+<h3 class="text-xl font-headline font-semibold text-on-surface">Secure Payments</h3>
+<p class="text-on-surface-variant font-body text-sm">Frictionless checkout experiences integrated with global payment gateways, fortified with enterprise-grade encryption.</p>
+</div>
+<!-- Small Card 2 -->
+<div class="glass-panel rounded-xl p-8 flex flex-col space-y-4 glow-effect transition-all duration-300">
+<span class="material-symbols-outlined text-3xl text-secondary" data-weight="fill" style="font-variation-settings: 'FILL' 1;">inventory_2</span>
+<h3 class="text-xl font-headline font-semibold text-on-surface">Smart Inventory</h3>
+<p class="text-on-surface-variant font-body text-sm">Real-time syncing across multiple channels. Automated alerts and predictive restocking algorithms to prevent stockouts.</p>
+</div>
+<!-- Wide Card -->
+<div class="md:col-span-2 glass-panel rounded-xl p-8 flex flex-col md:flex-row items-center gap-8 glow-effect transition-all duration-300">
+<div class="flex-1 space-y-4">
+<h3 class="text-2xl font-headline font-semibold text-on-surface">Platform Integrations</h3>
+<p class="text-on-surface-variant font-body">Seamlessly connect your operations. We build custom bridges for Shopify, WooCommerce, Magento, and headless commerce architectures.</p>
+<div class="flex gap-4 mt-4">
+<span class="px-3 py-1 rounded-full border border-primary/20 text-primary text-xs font-label">Shopify Plus</span>
+<span class="px-3 py-1 rounded-full border border-tertiary/20 text-tertiary text-xs font-label">WooCommerce</span>
+<span class="px-3 py-1 rounded-full border border-secondary/20 text-secondary text-xs font-label">Stripe API</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest border-t border-white/5 w-full mt-auto">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 px-6 md:px-12 py-16 max-w-7xl mx-auto w-full">
+<div class="md:col-span-1 space-y-4">
+<div class="font-display font-bold text-xl text-on-surface">Webbrixs</div>
+<p class="text-on-surface-variant font-body text-sm">© 2024 Webbrixs Digital Agency. All rights reserved.</p>
+</div>
+<div class="flex flex-col space-y-3">
+<a class="font-body text-sm text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Web Design</a>
+<a class="font-body text-sm text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Software Development</a>
+<a class="font-body text-sm text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">E-commerce</a>
+</div>
+<div class="flex flex-col space-y-3">
+<a class="font-body text-sm text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Portfolio</a>
+<a class="font-body text-sm text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Privacy Policy</a>
+<a class="font-body text-sm text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+</body></html>
