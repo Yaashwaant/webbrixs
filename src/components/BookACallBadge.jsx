@@ -21,7 +21,7 @@ export default function BookACallBadge() {
 
       {/* Book a Call Button */}
       <a
-        href="https://calendly.com/webbrixs/new-meeting"
+        href="https://calendly.com/hello-webbrixs/30min"
         target="_blank"
         rel="noopener noreferrer"
         className="flex items-center gap-2 px-5 py-3 rounded-full bg-accent text-on-surface hover:bg-accent-hover shadow-[0_4px_20px_rgba(255,90,54,0.4)] transition-all duration-300 transform hover:scale-105 active:scale-95 font-semibold text-xs md:text-sm"
