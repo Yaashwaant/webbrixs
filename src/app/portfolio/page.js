@@ -26,12 +26,12 @@ export default function PortfolioPage() {
       badge: null,
     },
     {
-      title: "PixelStudio Portal",
-      category: "Web Design",
-      desc: "Image editing digital studio portal website.",
+      title: "TaskFlow Automator",
+      category: "AI Workflow",
+      desc: "AI workflow automation integration platform.",
       img: "/images/projects/project2.png",
       gridClass: "md:col-span-4 row-span-1",
-      badge: null,
+      badge: "AI Automation",
     },
     {
       title: "Travelora App",

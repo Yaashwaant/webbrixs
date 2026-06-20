@@ -6,7 +6,7 @@ export default function FAQ() {
   const faqs = [
     {
       q: "What services does Webbrixs offer?",
-      a: "We specialize in custom UI/UX web design & development, cloud-native software engineering (SaaS platforms), end-to-end e-commerce ecosystems, and high-fidelity digital media editing."
+      a: "We specialize in custom UI/UX web design & development, cloud-native software engineering (SaaS platforms), end-to-end e-commerce ecosystems, and personalized AI workflow automation."
     },
     {
       q: "Do you provide hosting services?",
