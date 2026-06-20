@@ -42,7 +42,6 @@ export default function Home() {
         <div className="relative z-10 max-w-5xl mx-auto flex flex-col items-center gap-6">
           <ScrollReveal delay={0} direction="up">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 border border-accent/20 text-accent font-semibold text-xs mb-4 backdrop-blur-md">
-              <span className="material-symbols-outlined text-[16px] animate-spin">rotate_right</span>
               <span>Premium Engineering Agency</span>
             </div>
           </ScrollReveal>
