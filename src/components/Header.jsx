@@ -16,7 +16,6 @@ export default function Header() {
     { name: "Web Design & Dev", path: "/services/web-design-development" },
     { name: "Software Development", path: "/services/software-development" },
     { name: "End to End E-commerce", path: "/services/end-to-end-ecommerce" },
-    { name: "Photo Editing ↗", path: "https://www.cutoutexpert.com", external: true },
   ];
 
 

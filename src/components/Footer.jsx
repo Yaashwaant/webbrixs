@@ -52,9 +52,6 @@ export default function Footer() {
           <Link href="/services/end-to-end-ecommerce" className="text-sm text-on-surface-variant hover:text-accent transition-colors duration-300">
             E-commerce Solutions
           </Link>
-          <a href="https://www.cutoutexpert.com" target="_blank" rel="noopener noreferrer" className="text-sm text-on-surface-variant hover:text-accent transition-colors duration-300">
-            Photo Editing ↗
-          </a>
         </div>
 
         {/* Quick Links / Legal */}
