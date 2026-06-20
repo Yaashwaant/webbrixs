@@ -8,7 +8,7 @@ import ScrollReveal from "../components/ScrollReveal";
 
 export const metadata = {
   title: "Webbrixs - Custom Web Design & Software Engineering Agency",
-  description: "Started as a college side project by founder Yashwant, Webbrixs has grown into a 10+ person team delivering UI/UX, web development, and personalized AI workflow automation for businesses that want to move faster.",
+  description: "We are a specialized engineering agency delivering elite UI/UX, full-stack web development, and custom AI automation. We build scalable digital ecosystems for businesses that demand high performance and rapid growth.",
 };
 
 export default function Home() {
@@ -54,7 +54,7 @@ export default function Home() {
           
           <ScrollReveal delay={300} direction="up">
             <p className="text-base md:text-lg text-text-secondary max-w-2xl mt-4 leading-relaxed">
-              Started as a college side project by founder Yashwant, Webbrixs has grown into a 10+ person team delivering UI/UX, web development, and personalized AI workflow automation for businesses that want to move faster.
+              We are a specialized engineering agency delivering elite UI/UX, full-stack web development, and custom AI automation. <br className="hidden md:block" />We build scalable digital ecosystems for businesses that demand high performance and rapid growth.
             </p>
           </ScrollReveal>
           
