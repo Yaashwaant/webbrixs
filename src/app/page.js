@@ -49,6 +49,7 @@ export default function Home() {
             poster="/hero-poster.jpg"
             className="absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto -translate-x-1/2 -translate-y-1/2 object-cover opacity-60"
           >
+            <source src="/hero-mobile.mp4" type="video/mp4" media="(max-width: 768px)" />
             <source src="/this_is_a_video_of_website_pil.mp4" type="video/mp4" />
           </video>
           {/* Gradient Overlay for Readability */}
