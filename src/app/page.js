@@ -38,44 +38,74 @@ export default function Home() {
   return (
     <main className="w-full">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex flex-col justify-center items-center px-6 md:px-20 pt-[120px] pb-12 text-center overflow-hidden">
-        <div className="relative z-10 max-w-5xl mx-auto flex flex-col items-center gap-6">
+      <section className="relative min-h-screen flex flex-col justify-center items-center px-6 md:px-20 pt-24 pb-12 text-center overflow-hidden">
+        {/* Video Background */}
+        <div className="absolute inset-0 z-0 w-full h-full overflow-hidden">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto -translate-x-1/2 -translate-y-1/2 object-cover opacity-60"
+          >
+            <source src="/this_is_a_video_of_website_pil.mp4" type="video/mp4" />
+          </video>
+          {/* Gradient Overlay for Readability */}
+          <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/70 to-background"></div>
+        </div>
+
+        <div className="relative z-10 max-w-6xl mx-auto flex flex-col items-center gap-4">
           <ScrollReveal delay={0} direction="up">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 border border-accent/20 text-accent font-semibold text-xs mb-4 backdrop-blur-md">
-              <span>Premium Engineering Agency</span>
+            <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full glass-elevated text-accent font-semibold text-xs backdrop-blur-xl shadow-[0_20px_40px_rgba(0,0,0,0.2),0_0_20px_rgba(255,90,54,0.15)] transition-all hover:shadow-[0_20px_40px_rgba(0,0,0,0.4),0_0_30px_rgba(255,90,54,0.3)] hover:scale-105 cursor-default animate-float" style={{ willChange: "transform" }}>
+              <span className="relative flex h-2.5 w-2.5 mr-1">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75" style={{ animationDuration: '3s' }}></span>
+                <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-accent"></span>
+              </span>
+              Premium Engineering Agency
             </div>
           </ScrollReveal>
           
           <ScrollReveal delay={150} direction="up">
-            <h1 className="text-4xl md:text-7xl font-bold tracking-tight text-gradient leading-[1.1] max-w-4xl">
-              We forge immersive, high-performance web systems.
-            </h1>
+            <div style={{ perspective: "1000px" }}>
+              <h1 className="text-4xl md:text-6xl lg:text-7xl font-black tracking-tighter text-transparent bg-clip-text bg-gradient-to-br from-white via-white to-white/60 leading-[1.05] max-w-4xl drop-shadow-[0_20px_40px_rgba(0,0,0,0.3)]" style={{ willChange: "transform", transform: "translateZ(30px)" }}>
+                We build <br className="hidden md:block" />
+                <span className="text-gradient">high-performance</span> web systems.
+              </h1>
+            </div>
           </ScrollReveal>
           
           <ScrollReveal delay={300} direction="up">
-            <p className="text-base md:text-lg text-text-secondary max-w-2xl mt-4 leading-relaxed">
-              We are a specialized engineering agency delivering elite UI/UX, full-stack web development, and custom AI automation. <br className="hidden md:block" />We build scalable digital ecosystems for businesses that demand high performance and rapid growth.
+            <p className="text-base md:text-lg lg:text-xl text-text-secondary max-w-2xl mt-2 leading-relaxed font-medium drop-shadow-md">
+              UI/UX, full-stack development, and AI automation — for businesses that move fast.
             </p>
           </ScrollReveal>
           
           <ScrollReveal delay={450} direction="up">
-            <div className="flex flex-col sm:flex-row gap-4 mt-8 w-full sm:w-auto">
+            <div className="flex flex-col sm:flex-row gap-5 mt-6 w-full sm:w-auto items-center justify-center">
               <a 
                 href="#contact" 
-                className="bg-accent text-on-surface font-bold text-sm px-8 py-4 rounded-xl hover:bg-accent-hover hover:scale-105 glow-hover transition-all duration-300 flex items-center justify-center gap-2"
+                className="group bg-accent text-white font-bold text-base px-8 py-4 rounded-xl hover:bg-accent-hover hover:scale-105 shadow-[0_0_20px_rgba(255,90,54,0.4)] hover:shadow-[0_0_40px_rgba(255,90,54,0.6)] transition-all duration-300 flex items-center justify-center gap-3 w-full sm:w-auto relative overflow-hidden"
               >
-                Start Your Project
-                <span className="material-symbols-outlined">arrow_forward</span>
+                <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out"></div>
+                <span className="relative z-10 flex items-center gap-2">
+                  Start Your Project
+                  <span className="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                </span>
               </a>
               <Link 
                 href="/portfolio" 
-                className="bg-surface/50 backdrop-blur-md border border-white/10 text-on-surface font-semibold text-sm px-8 py-4 rounded-xl hover:bg-white/5 transition-all duration-300 flex items-center justify-center gap-2"
+                className="group glass-panel text-white font-semibold text-base px-8 py-4 rounded-xl hover:bg-white/10 hover:border-white/20 transition-all duration-300 flex items-center justify-center gap-3 w-full sm:w-auto"
               >
                 View Portfolio
+                <span className="material-symbols-outlined text-white/50 group-hover:text-white transition-colors">grid_view</span>
               </Link>
             </div>
           </ScrollReveal>
         </div>
+
+        {/* Decorative elements */}
+        <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-accent/30 to-transparent z-10"></div>
+        <div className="absolute top-1/2 -left-[10%] w-[40%] h-[40%] bg-accent/10 blur-[120px] rounded-full z-0 pointer-events-none"></div>
       </section>
 
       {/* Project Marquee Hero Component */}
