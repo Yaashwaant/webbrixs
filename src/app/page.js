@@ -39,19 +39,20 @@ export default function Home() {
     <main className="w-full">
       {/* Hero Section */}
       <section className="relative min-h-screen flex flex-col justify-center items-center px-6 md:px-20 pt-24 pb-12 text-center overflow-hidden">
-        {/* Video Background */}
-        <div className="absolute inset-0 z-0 w-full h-full overflow-hidden">
+        <div className="absolute inset-0 z-0 w-full h-full overflow-hidden bg-background">
           <video
             autoPlay
             loop
             muted
             playsInline
+            preload="auto"
+            poster="/hero-poster.jpg"
             className="absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto -translate-x-1/2 -translate-y-1/2 object-cover opacity-60"
           >
             <source src="/this_is_a_video_of_website_pil.mp4" type="video/mp4" />
           </video>
           {/* Gradient Overlay for Readability */}
-          <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/70 to-background"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/70 to-background pointer-events-none"></div>
         </div>
 
         <div className="relative z-10 max-w-6xl mx-auto flex flex-col items-center gap-4">
