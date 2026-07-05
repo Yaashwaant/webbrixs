@@ -48,6 +48,9 @@ export default function Home() {
           />
         </div>
 
+        {/* Spline Watermark Mask */}
+        <div className="absolute bottom-0 right-0 w-56 h-16 bg-black z-[5] pointer-events-none"></div>
+
         {/* UI Overlay */}
         <div className="absolute inset-0 w-full h-full flex flex-col justify-end pb-24 md:pb-32 px-6 md:px-16 pointer-events-none z-10 mx-auto max-w-[1600px]">
           <div className="w-full flex flex-col md:flex-row justify-between md:items-end gap-10">
@@ -56,12 +59,10 @@ export default function Home() {
               <h1 className="text-[2.5rem] leading-[1.1] md:text-6xl lg:text-[5rem] font-bold tracking-tight text-white text-glow">
                 We're Building<br/>Cool Experiences
               </h1>
-              <div className="flex items-center gap-4 text-[10px] md:text-[11px] font-semibold tracking-[0.3em] text-white/60 uppercase mt-4">
-                <span>AI</span> <span className="text-white/20">\</span> 
-                <span>WEB3</span> <span className="text-white/20">\</span> 
-                <span>UI</span> <span className="text-white/20">\</span> 
-                <span>3D</span> <span className="text-white/20">\</span> 
-                <span>MOTION</span>
+              <div className="flex flex-wrap items-center gap-4 text-[10px] md:text-[11px] font-semibold tracking-[0.3em] text-white/60 uppercase mt-4">
+                <span>WEB DEVELOPMENT</span> <span className="text-white/20">\</span> 
+                <span>SOFTWARE DEVELOPMENT</span> <span className="text-white/20">\</span> 
+                <span>AI BUSINESS AUTOMATION</span>
               </div>
             </div>
 
