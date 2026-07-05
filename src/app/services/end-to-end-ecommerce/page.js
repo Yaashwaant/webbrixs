@@ -27,7 +27,7 @@ export default function EcommercePage() {
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent z-10"></div>
         <div 
           className="absolute inset-0 z-0 opacity-30" 
-          style={{ background: "radial-gradient(circle at 50% 30%, rgba(255, 90, 54, 0.15) 0%, rgba(6, 6, 10, 0) 70%)" }}
+          style={{ background: "radial-gradient(circle at 50% 30%, rgba(0, 240, 255, 0.15) 0%, rgba(6, 6, 10, 0) 70%)" }}
         ></div>
 
         <div className="relative z-20 max-w-4xl mx-auto flex flex-col items-center gap-6">
@@ -45,7 +45,7 @@ export default function EcommercePage() {
           
           <div className="flex gap-4 pt-4">
             <a 
-              className="px-8 py-3.5 rounded-lg bg-accent text-on-surface hover:bg-accent-hover hover:shadow-[0_0_30px_rgba(255, 90, 54, 0.3)] transition-all duration-300 font-semibold" 
+              className="px-8 py-3.5 rounded-lg bg-accent text-on-surface hover:bg-accent-hover hover:shadow-[0_0_30px_rgba(0, 240, 255, 0.3)] transition-all duration-300 font-semibold" 
               href="#contact"
             >
               Start Your Project
@@ -151,7 +151,7 @@ export default function EcommercePage() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
           <div className="lg:col-span-4 space-y-6">
             <div className="glass-panel p-8 rounded-2xl text-center flex flex-col items-center">
-              <div className="w-24 h-24 rounded-full bg-gradient-to-tr from-accent to-accent/30 mb-4 flex items-center justify-center text-on-surface font-extrabold text-3xl shadow-[0_0_20px_rgba(255,90,54,0.3)]">
+              <div className="w-24 h-24 rounded-full bg-gradient-to-tr from-accent to-accent/30 mb-4 flex items-center justify-center text-on-surface font-extrabold text-3xl shadow-[0_0_20px_rgba(0, 240, 255,0.3)]">
                 Y
               </div>
               <h3 className="text-xl font-bold mb-1 text-on-surface">Yashwant</h3>

@@ -109,7 +109,7 @@ export default function PricingPage() {
                   href="/contact-us"
                   className={`block w-full py-4 text-center rounded-xl font-bold text-sm transition-all duration-300 ${
                     plan.featured 
-                      ? "bg-accent text-on-surface hover:bg-accent-hover shadow-[0_0_20px_rgba(255,90,54,0.3)]" 
+                      ? "bg-accent text-on-surface hover:bg-accent-hover shadow-[0_0_20px_rgba(0, 240, 255,0.3)]" 
                       : "bg-white/5 text-on-surface hover:bg-white/10"
                   }`}
                 >

@@ -162,7 +162,7 @@ export default function ContactPage() {
                 <button 
                   type="submit" 
                   disabled={loading}
-                  className="bg-accent text-on-surface font-semibold text-sm px-8 py-4 rounded-lg hover:bg-accent-hover hover:scale-102 hover:shadow-[0_0_20px_rgba(255,90,54,0.3)] transition-all duration-300 w-full mt-4 flex items-center justify-center gap-2 cursor-pointer"
+                  className="bg-accent text-on-surface font-semibold text-sm px-8 py-4 rounded-lg hover:bg-accent-hover hover:scale-102 hover:shadow-[0_0_20px_rgba(0, 240, 255,0.3)] transition-all duration-300 w-full mt-4 flex items-center justify-center gap-2 cursor-pointer"
                 >
                   {loading ? "Sending..." : "Send Message"}
                 </button>
@@ -176,7 +176,7 @@ export default function ContactPage() {
           {/* Founder Profile */}
           <ScrollReveal delay={200} direction="right">
             <div className="glass-panel rounded-xl p-8 flex flex-col items-center text-center bg-surface/50 border border-white/5">
-              <div className="w-24 h-24 rounded-full bg-gradient-to-tr from-accent to-accent/30 mb-4 flex items-center justify-center text-on-surface font-extrabold text-3xl shadow-[0_0_20px_rgba(255,90,54,0.3)]">
+              <div className="w-24 h-24 rounded-full bg-gradient-to-tr from-accent to-accent/30 mb-4 flex items-center justify-center text-on-surface font-extrabold text-3xl shadow-[0_0_20px_rgba(0, 240, 255,0.3)]">
                 Y
               </div>
               <h3 className="text-xl font-bold mb-1 text-on-surface">Yashwant</h3>

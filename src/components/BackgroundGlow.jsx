@@ -29,7 +29,7 @@ export default function BackgroundGlow() {
         className="fixed inset-0 pointer-events-none z-[1] opacity-60"
         style={{
           backgroundImage: `
-            radial-gradient(circle 350px at var(--mouse-x, 0px) var(--mouse-y, 0px), rgba(255, 90, 54, 0.12) 0%, transparent 100%),
+            radial-gradient(circle 350px at var(--mouse-x, 0px) var(--mouse-y, 0px), rgba(0, 240, 255, 0.12) 0%, transparent 100%),
             linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
             linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px)
           `,

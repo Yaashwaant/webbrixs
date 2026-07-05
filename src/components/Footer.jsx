@@ -17,11 +17,6 @@ export default function Footer() {
         {/* Brand & Description */}
         <div className="flex flex-col gap-4 col-span-1">
           <Link href="/" className="font-bold tracking-tighter text-xl text-on-surface flex items-center gap-2">
-            <img 
-              src="/images/projects/logo.png" 
-              alt="Webbrixs Logo" 
-              className="w-6 h-6 object-contain"
-            />
             <span>Webbrixs</span>
           </Link>
           <p className="text-sm text-text-secondary leading-relaxed max-w-xs mt-2">

@@ -1,13 +1,13 @@
-import { Inter } from "next/font/google";
+import { Syne } from "next/font/google";
 import "./globals.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import BackgroundGlow from "../components/BackgroundGlow";
 import BookACallBadge from "../components/BookACallBadge";
 
-const inter = Inter({
+const syne = Syne({
   subsets: ["latin"],
-  variable: "--font-inter",
+  variable: "--font-sans",
 });
 
 export const metadata = {
@@ -36,7 +36,7 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      className={`${inter.variable} h-full antialiased dark`}
+      className={`${syne.variable} h-full antialiased dark`}
     >
       <head>
         <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />

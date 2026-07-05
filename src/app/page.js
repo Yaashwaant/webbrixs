@@ -1,3 +1,4 @@
+import Spline from '@splinetool/react-spline/next';
 import Link from "next/link";
 import { ProjectMarquee } from "../components/Marquees";
 import ProcessBlock from "../components/ProcessBlock";
@@ -38,79 +39,54 @@ export default function Home() {
   return (
     <main className="w-full">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex flex-col justify-center items-center px-6 md:px-20 pt-24 pb-12 text-center overflow-hidden">
-        <div className="absolute inset-0 z-0 w-full h-full overflow-hidden bg-background">
-          <video
-            autoPlay
-            loop
-            muted
-            playsInline
-            preload="auto"
-            poster="/hero-poster.jpg"
-            className="absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto -translate-x-1/2 -translate-y-1/2 object-cover opacity-60"
-          >
-            <source src="/hero-mobile.mp4" type="video/mp4" media="(max-width: 768px)" />
-            <source src="/this_is_a_video_of_website_pil.mp4" type="video/mp4" />
-          </video>
-          {/* Gradient Overlay for Readability */}
-          <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/70 to-background pointer-events-none"></div>
+      <section className="relative w-full h-screen overflow-hidden bg-black flex items-center justify-center">
+        {/* Spline Canvas */}
+        <div className="absolute w-[300vw] sm:w-[200vw] md:w-[100vw] h-full flex items-center justify-center z-0">
+          <Spline
+            scene="https://prod.spline.design/J39WlXfFSwtX6KCt/scene.splinecode" 
+            className="w-full h-full"
+          />
         </div>
 
-        <div className="relative z-10 max-w-6xl mx-auto flex flex-col items-center gap-4">
-          <ScrollReveal delay={0} direction="up">
-            <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full glass-elevated text-accent font-semibold text-xs backdrop-blur-xl shadow-[0_20px_40px_rgba(0,0,0,0.2),0_0_20px_rgba(255,90,54,0.15)] transition-all hover:shadow-[0_20px_40px_rgba(0,0,0,0.4),0_0_30px_rgba(255,90,54,0.3)] hover:scale-105 cursor-default animate-float" style={{ willChange: "transform" }}>
-              <span className="relative flex h-2.5 w-2.5 mr-1">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75" style={{ animationDuration: '3s' }}></span>
-                <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-accent"></span>
-              </span>
-              Premium Engineering Agency
-            </div>
-          </ScrollReveal>
-          
-          <ScrollReveal delay={150} direction="up">
-            <div style={{ perspective: "1000px" }}>
-              <h1 className="text-4xl md:text-6xl lg:text-7xl font-black tracking-tighter text-transparent bg-clip-text bg-gradient-to-br from-white via-white to-white/60 leading-[1.05] max-w-4xl drop-shadow-[0_20px_40px_rgba(0,0,0,0.3)]" style={{ willChange: "transform", transform: "translateZ(30px)" }}>
-                We build <br className="hidden md:block" />
-                <span className="text-gradient">high-performance</span> web systems.
+        {/* UI Overlay */}
+        <div className="absolute inset-0 w-full h-full flex flex-col justify-end pb-24 md:pb-32 px-6 md:px-16 pointer-events-none z-10 mx-auto max-w-[1600px]">
+          <div className="w-full flex flex-col md:flex-row justify-between md:items-end gap-10">
+            {/* Bottom Left */}
+            <div className="flex flex-col gap-4 max-w-2xl pointer-events-auto">
+              <h1 className="text-[2.5rem] leading-[1.1] md:text-6xl lg:text-[5rem] font-bold tracking-tight text-white text-glow">
+                We're Building<br/>Cool Experiences
               </h1>
+              <div className="flex items-center gap-4 text-[10px] md:text-[11px] font-semibold tracking-[0.3em] text-white/60 uppercase mt-4">
+                <span>AI</span> <span className="text-white/20">\</span> 
+                <span>WEB3</span> <span className="text-white/20">\</span> 
+                <span>UI</span> <span className="text-white/20">\</span> 
+                <span>3D</span> <span className="text-white/20">\</span> 
+                <span>MOTION</span>
+              </div>
             </div>
-          </ScrollReveal>
-          
-          <ScrollReveal delay={300} direction="up">
-            <p className="text-base md:text-lg lg:text-xl text-text-secondary max-w-2xl mt-2 leading-relaxed font-medium drop-shadow-md">
-              UI/UX, full-stack development, and AI automation — for businesses that move fast.
-            </p>
-          </ScrollReveal>
-          
-          <ScrollReveal delay={450} direction="up">
-            <div className="flex flex-col sm:flex-row gap-5 mt-6 w-full sm:w-auto items-center justify-center">
-              <a 
-                href="#contact" 
-                className="group bg-accent text-white font-bold text-base px-8 py-4 rounded-xl hover:bg-accent-hover hover:scale-105 shadow-[0_0_20px_rgba(255,90,54,0.4)] hover:shadow-[0_0_40px_rgba(255,90,54,0.6)] transition-all duration-300 flex items-center justify-center gap-3 w-full sm:w-auto relative overflow-hidden"
-              >
-                <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out"></div>
-                <span className="relative z-10 flex items-center gap-2">
-                  Start Your Project
-                  <span className="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
-                </span>
-              </a>
-              <Link 
-                href="/portfolio" 
-                className="group glass-panel text-white font-semibold text-base px-8 py-4 rounded-xl hover:bg-white/10 hover:border-white/20 transition-all duration-300 flex items-center justify-center gap-3 w-full sm:w-auto"
-              >
-                View Portfolio
-                <span className="material-symbols-outlined text-white/50 group-hover:text-white transition-colors">grid_view</span>
-              </Link>
-            </div>
-          </ScrollReveal>
-        </div>
 
-        {/* Decorative elements */}
-        <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-accent/30 to-transparent z-10"></div>
-        <div className="absolute top-1/2 -left-[10%] w-[40%] h-[40%] bg-accent/10 blur-[120px] rounded-full z-0 pointer-events-none"></div>
+            {/* Bottom Right */}
+            <div className="flex flex-col gap-6 md:items-end text-left md:text-right max-w-sm pointer-events-auto pb-4">
+              <p className="text-[13px] md:text-sm text-white/70 leading-relaxed font-medium md:max-w-[280px]">
+                Crafting Awesome Stories and Killer Designs to Make Brand Stand Out
+              </p>
+              <div className="flex items-center gap-4">
+                <Link href="/portfolio" className="px-6 py-3 rounded-full border border-white/20 text-white text-[11px] font-semibold hover:bg-white/10 transition-colors tracking-[0.1em]">
+                  View Portfolio
+                </Link>
+                <a href="#contact" className="group flex items-center gap-4 pl-6 pr-1 py-1 rounded-full border border-white/20 text-white text-[11px] font-semibold hover:bg-white/10 transition-colors tracking-[0.1em]">
+                  <span>Start Your Project</span>
+                  <div className="w-9 h-9 rounded-full bg-[#00F0FF] flex items-center justify-center text-black group-hover:scale-105 transition-transform">
+                    <span className="material-symbols-outlined text-[18px]">add</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
-      {/* Project Marquee Hero Component */}
+            {/* Project Marquee Hero Component */}
       <section className="w-full overflow-hidden bg-surface/10 border-y border-white/5 py-4">
         <ProjectMarquee />
       </section>
@@ -225,7 +201,7 @@ export default function Home() {
       {/* Recent Projects Slider Section */}
       <section className="px-6 md:px-20 py-24 max-w-7xl mx-auto my-12">
         <ScrollReveal delay={0} direction="up">
-          <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6 px-4 md:px-12">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-6 px-4 md:px-12">
             <div className="max-w-2xl">
               <h2 className="text-3xl md:text-5xl font-bold mb-4 text-on-surface">Explore Our Recent Projects</h2>
               <p className="text-sm md:text-base text-text-secondary">
@@ -234,7 +210,7 @@ export default function Home() {
             </div>
             <Link 
               href="/portfolio" 
-              className="bg-accent/10 border border-accent/20 text-accent font-semibold text-sm px-6 py-3 rounded-lg hover:bg-accent hover:text-on-surface hover:shadow-[0_0_20px_rgba(255,90,54,0.3)] transition-all shrink-0 cursor-pointer"
+              className="bg-accent/10 border border-accent/20 text-accent font-semibold text-sm px-6 py-3 rounded-lg hover:bg-accent hover:text-on-surface hover:shadow-[0_0_20px_rgba(0, 240, 255,0.3)] transition-all shrink-0 cursor-pointer"
             >
               View All Projects
             </Link>
@@ -328,7 +304,7 @@ export default function Home() {
           </div>
           <a
             href="#contact"
-            className="px-8 py-4 bg-accent text-on-surface hover:bg-accent-hover shadow-[0_0_30px_rgba(255,90,54,0.4)] transition-all font-bold rounded-xl text-center shrink-0"
+            className="px-8 py-4 bg-accent text-on-surface hover:bg-accent-hover shadow-[0_0_30px_rgba(0, 240, 255,0.4)] transition-all font-bold rounded-xl text-center shrink-0"
           >
             Start a Project
           </a>
@@ -341,7 +317,7 @@ export default function Home() {
           <div className="lg:col-span-4 space-y-6">
             {/* Founder Card */}
             <div className="glass-panel p-8 rounded-2xl text-center flex flex-col items-center">
-              <div className="w-24 h-24 rounded-full bg-gradient-to-tr from-accent to-accent/30 mb-4 flex items-center justify-center text-on-surface font-extrabold text-3xl shadow-[0_0_20px_rgba(255,90,54,0.3)]">
+              <div className="w-24 h-24 rounded-full bg-gradient-to-tr from-accent to-accent/30 mb-4 flex items-center justify-center text-on-surface font-extrabold text-3xl shadow-[0_0_20px_rgba(0, 240, 255,0.3)]">
                 Y
               </div>
               <h3 className="text-xl font-bold mb-1 text-on-surface">Yashwant</h3>

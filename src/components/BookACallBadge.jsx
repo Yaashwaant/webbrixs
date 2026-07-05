@@ -24,7 +24,7 @@ export default function BookACallBadge() {
         href="https://calendly.com/hello-webbrixs/30min"
         target="_blank"
         rel="noopener noreferrer"
-        className="flex items-center gap-2 px-5 py-3 rounded-full bg-accent text-on-surface hover:bg-accent-hover shadow-[0_4px_20px_rgba(255,90,54,0.4)] transition-all duration-300 transform hover:scale-105 active:scale-95 font-semibold text-xs md:text-sm"
+        className="flex items-center gap-2 px-5 py-3 rounded-full bg-black text-white hover:bg-black/90 border border-white/20 transition-all duration-300 transform hover:scale-105 active:scale-95 font-semibold text-xs md:text-sm"
       >
         <span className="material-symbols-outlined text-[18px]">calendar_today</span>
         <span>Book a Call</span>

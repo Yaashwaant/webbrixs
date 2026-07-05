@@ -20,27 +20,23 @@ export default function Header() {
 
 
   return (
-    <header className="glass-panel fixed top-0 w-full z-50">
-      <div className="flex justify-between items-center px-6 md:px-20 py-4 w-full max-w-7xl mx-auto">
+    <header className="fixed top-0 w-full z-50 bg-transparent pt-4 pointer-events-none">
+      <div className="flex justify-between items-center px-6 md:px-16 py-4 w-full mx-auto relative pointer-events-auto">
+        
         {/* Logo */}
         <Link 
           href="/" 
-          className="font-bold tracking-tighter text-xl md:text-2xl text-on-surface hover:text-accent transition-all duration-300 flex items-center gap-2"
+          className="font-bold tracking-tighter text-xl md:text-2xl text-on-surface hover:text-white transition-all duration-300 flex items-center gap-2 mr-8"
         >
-          <img 
-            src="/images/projects/logo.png" 
-            alt="Webbrixs Logo" 
-            className="w-8 h-8 object-contain"
-          />
           <span>Webbrixs</span>
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden lg:flex gap-8 items-center relative">
+        <nav className="hidden lg:flex gap-10 items-center absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
           <Link 
             href="/" 
-            className={`font-semibold text-sm transition-colors duration-300 ${
-              isRouteActive("/") ? "text-accent border-b-2 border-accent pb-1" : "text-on-surface-variant hover:text-accent"
+            className={`font-medium text-[11px] uppercase tracking-[0.2em] transition-colors duration-300 ${
+              isRouteActive("/") ? "text-white" : "text-white/70 hover:text-white"
             }`}
           >
             Home
@@ -48,8 +44,8 @@ export default function Header() {
           
           <Link 
             href="/about" 
-            className={`font-semibold text-sm transition-colors duration-300 ${
-              isRouteActive("/about") ? "text-accent border-b-2 border-accent pb-1" : "text-on-surface-variant hover:text-accent"
+            className={`font-medium text-[11px] uppercase tracking-[0.2em] transition-colors duration-300 ${
+              isRouteActive("/about") ? "text-white" : "text-white/70 hover:text-white"
             }`}
           >
             About
@@ -62,16 +58,16 @@ export default function Header() {
             onMouseLeave={() => setServicesDropdownOpen(false)}
           >
             <button 
-              className={`font-semibold text-sm transition-colors duration-300 flex items-center gap-1 focus:outline-none ${
-                isServicesActive ? "text-accent" : "text-on-surface-variant hover:text-accent"
+              className={`font-medium text-[11px] uppercase tracking-[0.2em] transition-colors duration-300 flex items-center gap-1 focus:outline-none ${
+                isServicesActive ? "text-white" : "text-white/70 hover:text-white"
               }`}
             >
               Services
-              <span className="material-symbols-outlined text-sm">keyboard_arrow_down</span>
+              <span className="material-symbols-outlined text-[14px]">keyboard_arrow_down</span>
             </button>
             
             {servicesDropdownOpen && (
-              <div className="absolute top-full left-0 w-56 bg-surface border border-white/10 rounded-xl py-2 mt-1 shadow-2xl animate-fade-in">
+              <div className="absolute top-full left-0 w-56 bg-black/80 backdrop-blur-md border border-white/10 rounded-xl py-2 mt-4 shadow-2xl animate-fade-in">
                 {services.map((service) => (
                   service.external ? (
                     <a
@@ -79,7 +75,7 @@ export default function Header() {
                       href={service.path}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="block px-4 py-3 text-xs md:text-sm text-on-surface-variant hover:text-accent hover:bg-white/5 transition-colors"
+                      className="block px-4 py-3 text-xs md:text-sm text-white/70 hover:text-white hover:bg-white/5 transition-colors"
                     >
                       {service.name}
                     </a>
@@ -88,7 +84,7 @@ export default function Header() {
                       key={service.path}
                       href={service.path}
                       className={`block px-4 py-3 text-xs md:text-sm transition-colors hover:bg-white/5 ${
-                        isRouteActive(service.path) ? "text-accent font-bold" : "text-on-surface-variant hover:text-accent"
+                        isRouteActive(service.path) ? "text-white font-bold" : "text-white/70 hover:text-white"
                       }`}
                     >
                       {service.name}
@@ -101,8 +97,8 @@ export default function Header() {
 
           <Link 
             href="/pricing" 
-            className={`font-semibold text-sm transition-colors duration-300 ${
-              isRouteActive("/pricing") ? "text-accent border-b-2 border-accent pb-1" : "text-on-surface-variant hover:text-accent"
+            className={`font-medium text-[11px] uppercase tracking-[0.2em] transition-colors duration-300 ${
+              isRouteActive("/pricing") ? "text-white" : "text-white/70 hover:text-white"
             }`}
           >
             Pricing
@@ -110,8 +106,8 @@ export default function Header() {
 
           <Link 
             href="/portfolio" 
-            className={`font-semibold text-sm transition-colors duration-300 ${
-              isRouteActive("/portfolio") ? "text-accent border-b-2 border-accent pb-1" : "text-on-surface-variant hover:text-accent"
+            className={`font-medium text-[11px] uppercase tracking-[0.2em] transition-colors duration-300 ${
+              isRouteActive("/portfolio") ? "text-white" : "text-white/70 hover:text-white"
             }`}
           >
             Portfolio
@@ -122,7 +118,7 @@ export default function Header() {
         {/* Contact Us button */}
         <Link 
           href="/contact-us" 
-          className="hidden lg:flex items-center justify-center font-semibold text-sm px-6 py-3 rounded-xl bg-accent text-on-surface hover:bg-accent-hover hover:shadow-[0_0_15px_rgba(255,90,54,0.4)] transition-all duration-300"
+          className="hidden lg:flex items-center justify-center font-medium text-[11px] px-8 py-3 rounded-full border border-white/20 text-white hover:bg-white/10 transition-all duration-300 tracking-wider"
         >
           Contact Us
         </Link>
@@ -141,16 +137,16 @@ export default function Header() {
 
       {/* Mobile Drawer Navigation */}
       {mobileMenuOpen && (
-        <div className="lg:hidden absolute top-full left-0 w-full bg-surface/95 backdrop-blur-2xl border-b border-white/10 flex flex-col p-6 gap-6 shadow-2xl animate-slide-down max-h-[85vh] overflow-y-auto">
-          <Link href="/" onClick={() => setMobileMenuOpen(false)} className={`text-base font-semibold ${isRouteActive("/") ? "text-accent" : "text-on-surface"}`}>
+        <div className="lg:hidden absolute top-full left-0 w-full bg-black/95 backdrop-blur-2xl border-b border-white/10 flex flex-col p-6 gap-6 shadow-2xl animate-slide-down max-h-[85vh] overflow-y-auto">
+          <Link href="/" onClick={() => setMobileMenuOpen(false)} className={`text-base font-semibold ${isRouteActive("/") ? "text-accent" : "text-white"}`}>
             Home
           </Link>
-          <Link href="/about" onClick={() => setMobileMenuOpen(false)} className={`text-base font-semibold ${isRouteActive("/about") ? "text-accent" : "text-on-surface"}`}>
+          <Link href="/about" onClick={() => setMobileMenuOpen(false)} className={`text-base font-semibold ${isRouteActive("/about") ? "text-accent" : "text-white"}`}>
             About
           </Link>
 
           <div className="flex flex-col gap-2">
-            <span className="text-xs font-bold text-text-secondary uppercase tracking-wider mb-2">Our Services</span>
+            <span className="text-xs font-bold text-white/60 uppercase tracking-wider mb-2">Our Services</span>
             {services.map((service) => (
               service.external ? (
                 <a
@@ -158,7 +154,7 @@ export default function Header() {
                   href={service.path}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="py-2 text-sm text-on-surface-variant hover:text-accent"
+                  className="py-2 text-sm text-white/80 hover:text-white"
                 >
                   {service.name}
                 </a>
@@ -168,7 +164,7 @@ export default function Header() {
                   href={service.path}
                   onClick={() => setMobileMenuOpen(false)}
                   className={`py-2 text-sm transition-colors ${
-                    isRouteActive(service.path) ? "text-accent font-bold" : "text-on-surface-variant hover:text-accent"
+                    isRouteActive(service.path) ? "text-accent font-bold" : "text-white/80 hover:text-white"
                   }`}
                 >
                   {service.name}
@@ -177,11 +173,11 @@ export default function Header() {
             ))}
           </div>
 
-          <Link href="/pricing" onClick={() => setMobileMenuOpen(false)} className={`text-base font-semibold ${isRouteActive("/pricing") ? "text-accent" : "text-on-surface"}`}>
+          <Link href="/pricing" onClick={() => setMobileMenuOpen(false)} className={`text-base font-semibold ${isRouteActive("/pricing") ? "text-accent" : "text-white"}`}>
             Pricing
           </Link>
 
-          <Link href="/portfolio" onClick={() => setMobileMenuOpen(false)} className={`text-base font-semibold ${isRouteActive("/portfolio") ? "text-accent" : "text-on-surface"}`}>
+          <Link href="/portfolio" onClick={() => setMobileMenuOpen(false)} className={`text-base font-semibold ${isRouteActive("/portfolio") ? "text-accent" : "text-white"}`}>
             Portfolio
           </Link>
 
@@ -189,7 +185,7 @@ export default function Header() {
           <Link
             href="/contact-us"
             onClick={() => setMobileMenuOpen(false)}
-            className="flex items-center justify-center font-bold text-base px-6 py-4 rounded-xl bg-accent text-on-surface hover:bg-accent-hover transition-all w-full text-center mt-2"
+            className="flex items-center justify-center font-bold text-base px-6 py-4 rounded-xl bg-accent text-black hover:bg-accent-hover transition-all w-full text-center mt-2"
           >
             Contact Us
           </Link>

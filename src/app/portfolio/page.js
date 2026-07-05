@@ -14,7 +14,7 @@ export default function PortfolioPage() {
       category: "Web Design",
       desc: "Premium wallet & leather goods e-commerce marketplace.",
       img: "/images/projects/project11.png",
-      gridClass: "md:col-span-8 row-span-2",
+      gridClass: "md:col-span-8 md:row-span-2",
       badge: "Web Design",
     },
     {
@@ -22,7 +22,7 @@ export default function PortfolioPage() {
       category: "Web Design",
       desc: "Minimalist catalog & customized furniture portal.",
       img: "/images/projects/project1.png",
-      gridClass: "md:col-span-4 row-span-1",
+      gridClass: "md:col-span-4 md:row-span-1",
       badge: null,
     },
     {
@@ -30,7 +30,7 @@ export default function PortfolioPage() {
       category: "AI Workflow",
       desc: "AI workflow automation integration platform.",
       img: "/images/projects/project2.png",
-      gridClass: "md:col-span-4 row-span-1",
+      gridClass: "md:col-span-4 md:row-span-1",
       badge: "AI Automation",
     },
     {
@@ -38,7 +38,7 @@ export default function PortfolioPage() {
       category: "SaaS Platform",
       desc: "Immersive travel booking portal interface.",
       img: "/images/projects/project14.png",
-      gridClass: "md:col-span-6 row-span-1",
+      gridClass: "md:col-span-6 md:row-span-1",
       badge: "SaaS Platform",
     },
     {
@@ -46,7 +46,7 @@ export default function PortfolioPage() {
       category: "Mobile App",
       desc: "Modern portfolio advisory and financial mobile application.",
       img: "/images/projects/project16.png",
-      gridClass: "md:col-span-6 row-span-1",
+      gridClass: "md:col-span-6 md:row-span-1",
       badge: "Mobile App",
     },
     {
@@ -54,7 +54,7 @@ export default function PortfolioPage() {
       category: "Web Design",
       desc: "Vibrant digital agency portfolio interface.",
       img: "/images/projects/project3.png",
-      gridClass: "md:col-span-3 row-span-1",
+      gridClass: "md:col-span-3 md:row-span-1",
       badge: null,
     },
     {
@@ -62,7 +62,7 @@ export default function PortfolioPage() {
       category: "Web Design",
       desc: "Minimalist architectural studio website portal.",
       img: "/images/projects/project4.png",
-      gridClass: "md:col-span-3 row-span-1",
+      gridClass: "md:col-span-3 md:row-span-1",
       badge: null,
     },
     {
@@ -70,7 +70,7 @@ export default function PortfolioPage() {
       category: "E-Commerce",
       desc: "End-to-end custom Shopify connector marketplace.",
       img: "/images/projects/project12.png",
-      gridClass: "md:col-span-6 row-span-2",
+      gridClass: "md:col-span-6 md:row-span-2",
       badge: "E-Commerce",
     },
     {
@@ -78,7 +78,7 @@ export default function PortfolioPage() {
       category: "SaaS Platform",
       desc: "Healthcare patient portal and SaaS analytics dashboard.",
       img: "/images/projects/project5.png",
-      gridClass: "md:col-span-4 row-span-1",
+      gridClass: "md:col-span-4 md:row-span-1",
       badge: null,
     },
     {
@@ -86,7 +86,7 @@ export default function PortfolioPage() {
       category: "SaaS Platform",
       desc: "Real estate properties and brokerage listings manager.",
       img: "/images/projects/project6.png",
-      gridClass: "md:col-span-4 row-span-1",
+      gridClass: "md:col-span-4 md:row-span-1",
       badge: null,
     },
     // Decorative Grid Blocks
@@ -95,7 +95,7 @@ export default function PortfolioPage() {
       category: "",
       desc: "",
       img: "/images/projects/project7.png",
-      gridClass: "md:col-span-3 row-span-1",
+      gridClass: "md:col-span-3 md:row-span-1",
       badge: null,
     },
     {
@@ -103,7 +103,7 @@ export default function PortfolioPage() {
       category: "",
       desc: "",
       img: "/images/projects/project8.png",
-      gridClass: "md:col-span-3 row-span-1",
+      gridClass: "md:col-span-3 md:row-span-1",
       badge: null,
     },
     {
@@ -111,7 +111,7 @@ export default function PortfolioPage() {
       category: "",
       desc: "",
       img: "/images/projects/project9.png",
-      gridClass: "md:col-span-3 row-span-1",
+      gridClass: "md:col-span-3 md:row-span-1",
       badge: null,
     },
     {
@@ -119,7 +119,7 @@ export default function PortfolioPage() {
       category: "",
       desc: "",
       img: "/images/projects/project10.png",
-      gridClass: "md:col-span-3 row-span-1",
+      gridClass: "md:col-span-3 md:row-span-1",
       badge: null,
     },
     {
@@ -127,7 +127,7 @@ export default function PortfolioPage() {
       category: "SaaS Platform",
       desc: "Cloud logistics and metrics visual tracker.",
       img: "/images/projects/project17.png",
-      gridClass: "md:col-span-6 row-span-1",
+      gridClass: "md:col-span-6 md:row-span-1",
       badge: null,
     },
     {
@@ -135,7 +135,7 @@ export default function PortfolioPage() {
       category: "SaaS Platform",
       desc: "High concurrency audio streaming application interface.",
       img: "https://lh3.googleusercontent.com/aida/AP1WRLusOBUknZjFKo0VsgOdqpdxefTuSUQnZ0nA3XohQwohP8AG6yfDSdZOS6kH3-0wlJEmtn2ORIeL0I0NY17X_GhcgnspSBznLD1LT2K0AOPWMMS4ZdOWatys-o8UfAPbSujYDz-8ONRqzImQ6CWoMvuXzq0vmFRqAKut_5uEAYE6tqthVLHoYBXPfKoAfty5jlV3aocwg936McMcqAKTaWS7K1MfqeRBAHKH0EuZIOFIKWB0jCU-MKuuwJON",
-      gridClass: "md:col-span-6 row-span-1",
+      gridClass: "md:col-span-6 md:row-span-1",
       badge: null,
     },
   ];

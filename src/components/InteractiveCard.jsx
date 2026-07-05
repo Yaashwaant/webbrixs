@@ -66,9 +66,9 @@ export default function InteractiveCard({
               transform: `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`,
               transformStyle: "preserve-3d",
               boxShadow: isHovered 
-                ? "0 20px 40px rgba(0,0,0,0.6), 0 0 35px rgba(255, 90, 54, 0.2)" 
+                ? "0 20px 40px rgba(0,0,0,0.6), 0 0 35px rgba(0, 240, 255, 0.2)" 
                 : "0 4px 20px rgba(0,0,0,0.3)",
-              borderColor: isHovered ? "rgba(255, 90, 54, 0.3)" : "rgba(255, 255, 255, 0.08)",
+              borderColor: isHovered ? "rgba(0, 240, 255, 0.3)" : "rgba(255, 255, 255, 0.08)",
             }}
           >
             {wrapperChildren}
@@ -87,9 +87,9 @@ export default function InteractiveCard({
             transform: `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`,
             transformStyle: "preserve-3d",
             boxShadow: isHovered 
-              ? "0 20px 40px rgba(0,0,0,0.6), 0 0 35px rgba(255, 90, 54, 0.2)" 
+              ? "0 20px 40px rgba(0,0,0,0.6), 0 0 35px rgba(0, 240, 255, 0.2)" 
               : "0 4px 20px rgba(0,0,0,0.3)",
-            borderColor: isHovered ? "rgba(255, 90, 54, 0.3)" : "rgba(255, 255, 255, 0.08)",
+            borderColor: isHovered ? "rgba(0, 240, 255, 0.3)" : "rgba(255, 255, 255, 0.08)",
           }}
         >
           {wrapperChildren}
@@ -108,9 +108,9 @@ export default function InteractiveCard({
           transform: `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`,
           transformStyle: "preserve-3d",
           boxShadow: isHovered 
-            ? "0 20px 40px rgba(0,0,0,0.6), 0 0 35px rgba(255, 90, 54, 0.2)" 
+            ? "0 20px 40px rgba(0,0,0,0.6), 0 0 35px rgba(0, 240, 255, 0.2)" 
             : "0 4px 20px rgba(0,0,0,0.3)",
-          borderColor: isHovered ? "rgba(255, 90, 54, 0.3)" : "rgba(255, 255, 255, 0.08)",
+          borderColor: isHovered ? "rgba(0, 240, 255, 0.3)" : "rgba(255, 255, 255, 0.08)",
         }}
       >
         {wrapperChildren}

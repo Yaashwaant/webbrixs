@@ -35,7 +35,7 @@ export default function AboutPage() {
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent z-10"></div>
         <div 
           className="absolute inset-0 z-0 opacity-40" 
-          style={{ background: "radial-gradient(circle at 50% 40%, rgba(255, 90, 54, 0.15) 0%, rgba(6, 6, 10, 0) 70%)" }}
+          style={{ background: "radial-gradient(circle at 50% 40%, rgba(0, 240, 255, 0.15) 0%, rgba(6, 6, 10, 0) 70%)" }}
         ></div>
 
         <div className="relative z-20 max-w-4xl mx-auto flex flex-col items-center gap-6">

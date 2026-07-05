@@ -30,7 +30,7 @@ export default function SoftwareDevelopmentPage() {
           <div className="pt-4 flex flex-wrap gap-4 justify-center md:justify-start">
             <Link 
               href="/contact-us" 
-              className="bg-accent/10 border border-accent/30 text-accent px-8 py-3 rounded-lg font-semibold hover:bg-accent hover:text-on-surface hover:shadow-[0_0_30px_rgba(255,90,54,0.3)] transition-all duration-300 active:scale-95 flex items-center gap-2"
+              className="bg-accent/10 border border-accent/30 text-accent px-8 py-3 rounded-lg font-semibold hover:bg-accent hover:text-on-surface hover:shadow-[0_0_30px_rgba(0, 240, 255,0.3)] transition-all duration-300 active:scale-95 flex items-center gap-2"
             >
               Discuss Architecture
               <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
@@ -151,7 +151,7 @@ export default function SoftwareDevelopmentPage() {
             </p>
             <Link 
               href="/contact-us" 
-              className="inline-block mt-6 bg-accent/20 border border-accent text-accent px-8 py-3 rounded-full font-bold hover:bg-accent hover:text-on-surface hover:shadow-[0_0_40px_rgba(255,90,54,0.4)] transition-all duration-300"
+              className="inline-block mt-6 bg-accent/20 border border-accent text-accent px-8 py-3 rounded-full font-bold hover:bg-accent hover:text-on-surface hover:shadow-[0_0_40px_rgba(0, 240, 255,0.4)] transition-all duration-300"
             >
               Initiate Project
             </Link>
